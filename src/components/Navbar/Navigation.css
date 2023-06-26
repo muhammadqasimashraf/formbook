@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  background-color: aqua;
+  color: #fff;
+}
+.logo {
+  font-size: 30px;
+}
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  /* width: 75%; */
+  background-color: red;
+  align-items: center;
+}
+.builderbook,
+.saasboilerplate,
+.reviews,
+.login {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  /* padding: 10px 20px; */
+  margin: 0 10px;
+  cursor: pointer;
+}
+.mobile-menu-icon {
+  display: none;
+}
+@media screen and (max-width: 780px) {
+  .log {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 35px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-links-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: burlywood;
+    left: 0;
+    top: 75px;
+    transition: all 0.5s ease-out;
+    width: 100%;
+  }
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    background-color: blueviolet;
+  }
+  .home,
+  .saasboilerplate,
+  .reviews {
+    width: 100%;
+  }
+}
