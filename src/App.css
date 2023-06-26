@@ -38,4 +38,9 @@
 }
 body {
   font-family: "IBM Plex Mono", monospace !important;
+  background-color: #0d1117 !important;
+  font-size: 0.875rem !important;
+}
+.btn-text {
+  font-size: 0.875rem !important;
 }

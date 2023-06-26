@@ -5,11 +5,13 @@ import {
   AiOutlineArrowRight,
   AiFillGithub,
 } from "react-icons/ai";
+import data from "../../config/data";
+import Card from "../../components/Card/Card";
 
 const Builderbook = () => {
   return (
     <div>
-      <div className="bg-dark text-white">
+      <div className="text-white">
         <div className="heading">{formattedData.heading}</div>
         <div className="row btn-holder m-0 justify-content-around">
           <div className="m-auto">
@@ -25,10 +27,13 @@ const Builderbook = () => {
         <div className="content container small">
           {formattedData.subHeading}
         </div>
-        <button type="button" className="btn btn-success small">
+        <button type="button" className="btn btn-success btn-sm btn-text">
           {formattedData.btnText}
         </button>
       </div>
+      {data.map((item) => (
+        <Card item={item} />
+      ))}
     </div>
   );
 };

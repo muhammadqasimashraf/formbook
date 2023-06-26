@@ -8,8 +8,9 @@
   justify-content: space-between;
   align-items: center;
   height: 40px;
-  background-color: aqua;
+  background-color: #424242;
   color: #fff;
+  font-size: 0.875rem !important;
 }
 .logo {
   font-size: 30px;
@@ -19,7 +20,7 @@
   justify-content: flex-end;
   list-style: none;
   /* width: 75%; */
-  background-color: red;
+  /* background-color: red; */
   align-items: center;
 }
 .builderbook,
@@ -28,7 +29,7 @@
 .login {
   text-decoration: none;
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.875rem;
   /* padding: 10px 20px; */
   margin: 0 10px;
   cursor: pointer;

@@ -19,16 +19,25 @@ const Navigation = () => {
           }
         >
           <Link to="/" className="home">
-            <li className="builderbook">Book 1:Builder Book</li>
+            <li className="builderbook">
+              {" "}
+              <a href="#">Book 1:Builder Book</a>{" "}
+            </li>
           </Link>
           <Link to="saasboilerplate" className="saasboilerplate">
-            <li className="saasboilerplate">Book 2: SaaS Boilerplate</li>
+            <li className="saasboilerplate">
+              <a href="#"> Book 2: SaaS Boilerplate</a>
+            </li>
           </Link>
           <Link to="reviews" className="reviews">
-            <li className="reviews">Reviews</li>
+            <li className="reviews">
+              <a href="#">Reviews</a>
+            </li>
           </Link>
           <Link to="login" className="login">
-            <li className="login">Login</li>
+            <li className="login">
+              <a href="#">Login</a>
+            </li>
           </Link>
         </ul>
         <button
