@@ -44,3 +44,12 @@ body {
 .btn-text {
   font-size: 0.875rem !important;
 }
+.page1 {
+  padding: 10px 8%;
+}
+.cardContainer {
+  padding: 10px 0;
+}
+.btn {
+  background: none;
+}

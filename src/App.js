@@ -9,15 +9,7 @@ import Login from "./pages/login/Login";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Navigation />
-        <Routes>
-          <Route path="/" element={<Builderbook />} />
-          <Route path="saasboilerplate" element={<SaasBiolerPlate />} />
-          <Route path="reviews" element={<Reviews />} />
-          <Route path="login" element={<Login />} />
-        </Routes>
-      </BrowserRouter>
+      <Navigation />
     </div>
   );
 }

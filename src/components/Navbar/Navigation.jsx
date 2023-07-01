@@ -1,58 +1,45 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { useState } from "react";
-import "./Navigation.css";
-// import { logo } form '../assets/';
-import logo from "../../assets/img/logo.svg";
-const Navigation = () => {
-  const [isMobile, setIsMobile] = useState(false);
-  return (
-    <nav className="navbar">
-      <img src={logo} alt="Logo" className="h-100" />
+import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import Container from "react-bootstrap/Container";
+import Builderbook from "../../pages/builderBook/Builderbook";
+import SaasBiolerPlate from "../../pages/saasBoilerPlate/SaasBiolerPlate";
+import Reviews from "../../pages/reviews/Reviews";
 
-      <div>
-        <ul
-          className={
-            isMobile
-              ? "nav-links-mobile h-50 display-4"
-              : "nav-links h-100 display-4"
-          }
-        >
-          <Link to="/" className="home">
-            <li className="builderbook">
-              {" "}
-              <a href="#">Book 1:Builder Book</a>{" "}
-            </li>
-          </Link>
-          <Link to="saasboilerplate" className="saasboilerplate">
-            <li className="saasboilerplate">
-              <a href="#"> Book 2: SaaS Boilerplate</a>
-            </li>
-          </Link>
-          <Link to="reviews" className="reviews">
-            <li className="reviews">
-              <a href="#">Reviews</a>
-            </li>
-          </Link>
-          <Link to="login" className="login">
-            <li className="login">
-              <a href="#">Login</a>
-            </li>
-          </Link>
-        </ul>
-        <button
-          className="mobile-menu-icon"
-          onClick={() => setIsMobile(!isMobile)}
-        >
-          {isMobile ? (
-            <i className="fas fa-times"></i>
-          ) : (
-            <i className="fas fa-bars"></i>
-          )}
-        </button>
-      </div>
-    </nav>
+function Navigation() {
+  return (
+    <Router>
+      <Navbar bg="light" expand="lg">
+        <Container>
+          <Navbar.Brand as={Link} to="/">
+            React Bootstrap Navbar
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="navbar-nav" />
+          <Navbar.Collapse id="navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link as={Link} to="/" exact>
+                BuilderBook
+              </Nav.Link>
+              <Nav.Link as={Link} to="/saasboilerplate">
+                SaasBoilerPlate
+              </Nav.Link>
+              <Nav.Link as={Link} to="/reviews">
+                Reviews
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+      <Container className="mt-3">
+        <Routes>
+          <Route path="/" element={<Builderbook />} />
+          <Route path="saasboilerplate" element={<SaasBiolerPlate />} />
+          <Route path="reviews" element={<Reviews />} />
+        </Routes>
+      </Container>
+    </Router>
   );
-};
+}
 
 export default Navigation;
