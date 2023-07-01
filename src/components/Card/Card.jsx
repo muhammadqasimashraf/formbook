@@ -4,8 +4,8 @@ const Card = ({ item }) => {
   console.log(item);
 
   return (
-    <div className=" col-lg-3 col-md-6 col-sm-6 text-white cardWidth mb-5">
-      <div className="data p-3 mb-4 bg-dark h-100 rounded">
+    <div className=" col-lg-3 col-md-6 col-sm-6 text-white cardWidth mb-5 pl-0">
+      <div className="data pt-2 mb-4 bg-dark h-100 rounded">
         <div className="img mt-2 mb-2 text-center">
           <img
             src={item.url}

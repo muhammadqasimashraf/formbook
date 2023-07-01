@@ -48,7 +48,7 @@ body {
   padding: 10px 8%;
 }
 .cardContainer {
-  padding: 10px 0;
+  /* padding: 10px 0; */
 }
 .btn {
   background: none;
@@ -60,4 +60,5 @@ body {
   letter-spacing: 0.01rem !important;
   word-spacing: 0.01rem;
   padding: 20px 10px;
+  font-family: Roboto, sans-serif;
 }
