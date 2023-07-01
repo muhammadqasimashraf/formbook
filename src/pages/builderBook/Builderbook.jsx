@@ -39,10 +39,10 @@ const Builderbook = () => {
         ))}
       </div>
       <div className="buttons d-flex justify-content-center align-items-center mt-4 ">
-        <button className="p-2 m-3  border-light text-white btn">
+        <button className="p-2 m-3  border-light text-white btn shadow-none">
           <span className="p-3">See all Reviews</span>
         </button>
-        <button className="p-2 m-3 text-white border-light btn">
+        <button className="p-2 m-3 text-white border-light btn shadow-none">
           {" "}
           <span className="p-3">About Us</span>
         </button>
@@ -51,8 +51,8 @@ const Builderbook = () => {
         <div className="row mt-5 text-align-left">
           {formattedData.bookContent.map((item, index) => (
             <div key={index} className="text-white col-lg-6 mt-5">
-              <p className="font-bold">{item.paragraphHeading}</p>
-              <p className="font-bold">{item.paragraph}</p>
+              <p className="font-weight-bold">{item.paragraphHeading}</p>
+              <p>{item.paragraph}</p>
             </div>
           ))}
         </div>

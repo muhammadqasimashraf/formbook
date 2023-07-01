@@ -53,3 +53,6 @@ body {
 .btn {
   background: none;
 }
+.button:focus {
+  outline: none !important;
+}
