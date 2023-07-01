@@ -56,3 +56,8 @@ body {
 .button:focus {
   outline: none !important;
 }
+.comment {
+  letter-spacing: 0.01rem !important;
+  word-spacing: 0.01rem;
+  padding: 20px 10px;
+}
