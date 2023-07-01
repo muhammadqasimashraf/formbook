@@ -11,7 +11,7 @@ import Card from "../../components/Card/Card";
 const Builderbook = () => {
   return (
     <div>
-      <div className="text-white page1">
+      <div className="text-white page1 text-center">
         <div className="heading">
           <h1 className="mt-5 mb-4">{formattedData.heading}</h1>
         </div>
@@ -48,14 +48,14 @@ const Builderbook = () => {
         </button>
       </div>
       <div>
-        {formattedData.bookContent.map((item, index) => (
-          <div key={index} className="text-white row">
-            <div className="col-lg-6">
+        <div className="row mt-5 text-align-left">
+          {formattedData.bookContent.map((item, index) => (
+            <div key={index} className="text-white col-lg-6 mt-5">
               <p className="font-bold">{item.paragraphHeading}</p>
               <p className="font-bold">{item.paragraph}</p>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
