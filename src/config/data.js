@@ -44,27 +44,85 @@ export const formattedData = {
 //   ],
 // };
 
+// export const contentData = [
+//   {
+//     title: "What you will learn ",
+//     isList: false,
+//   },
+//   {
+//     title: "Why should I pay $99 for this book?",
+//     isList: false,
+//   },
+//   {
+//     title: "Project structure",
+//     isList: false,
+//   },
+//   {
+//     title: "ScreenShots",
+//     isList: true,
+//     subtopics: ["Hello", "Hello2"],
+//   },
+//   {
+//     title: "Project structure",
+//     isList: false,
+//   },
+// ];
+
 export const contentData = [
   {
-    title: "What you will learn ",
-    isList: false,
+    chapterName: "Introduction",
+    data: [
+      {
+        topic: "what you will learn ",
+        isList: false,
+      },
+      {
+        topic: "why should I pay 99$ for this  ",
+        isList: false,
+      },
+      {
+        topic: "Project Structure  ",
+        isList: false,
+      },
+      {
+        topic: "ScreenShots  ",
+        isList: true,
+        subTopics: ["customer pages", "admin pages"],
+      },
+    ],
   },
   {
-    title: "Why should I pay $99 for this book?",
-    isList: false,
-  },
-  {
-    title: "Project structure",
-    isList: false,
-  },
-  {
-    title: "ScreenShots",
-    isList: true,
-    subtopics: ["Hello", "Hello2"],
-  },
-  {
-    title: "Project structure",
-    isList: false,
+    chapterName:
+      "Chapter 1: Set up Node.js project. VS code editor and lint. Set up Next.js project. Material-UI integration. Server-side rendering. Custom styles.",
+    data: [
+      {
+        topic: "Set up Node.js project ",
+        isList: true,
+        subTopics: ["Installing node js and yarn ", "package.json"],
+      },
+      {
+        topic: "Vs code Editor and Lint ",
+        isList: true,
+        subTopics: ["VS code editor ", "ESLint and Prettier"],
+      },
+      {
+        topic: "Set up Next.js project ",
+        isList: true,
+        subTopics: [
+          "Basic Codes",
+          "Compiling Code",
+          "Document HOC",
+          "App HOC extension",
+          "Index Page ",
+          "Header Component",
+        ],
+      },
+      {
+        topic: "ScreenShots  ",
+        isList: true,
+        subTopics: ["customer pages", "admin pages"],
+      },
+    ],
   },
 ];
 export const cardData = [

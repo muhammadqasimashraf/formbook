@@ -65,25 +65,7 @@ const Builderbook = () => {
             {formattedData.btnText}
           </button>
         </div>
-        <div className="tableOfContentCards text-white">
-          {contentData.map((item) =>
-            item.isList ? (
-              item.subtopics.map((subItem, index) => (
-                <div>
-                  <ul>
-                    <li key={index} className="text-white">
-                      {subItem}
-                    </li>
-                  </ul>
-                </div>
-              ))
-            ) : (
-              <ul>
-                <li>{item.title}</li>
-              </ul>
-            )
-          )}
-        </div>
+        <div className="tableOfContentCards text-white"></div>
       </div>
     </div>
   );
