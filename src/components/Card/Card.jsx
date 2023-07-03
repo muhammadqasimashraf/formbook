@@ -8,7 +8,7 @@ const Card = ({ item }) => {
       <div className="data pt-2 mb-4 bg-dark h-100 rounded">
         <div className="img mt-2 mb-2 text-center">
           <img
-            src={item.url}
+            src={item.urlThumbnail}
             alt=""
             className="w-75px rounded-circle text-center"
             width={80}
