@@ -5,7 +5,7 @@ import {
   AiOutlineArrowRight,
   AiFillGithub,
 } from "react-icons/ai";
-import { cardData, formattedData, contentData } from "../../config/data";
+import { cardData, formattedData, bookContentData } from "../../config/data";
 import Card from "../../components/Card/Card";
 
 const Builderbook = () => {
@@ -65,7 +65,35 @@ const Builderbook = () => {
             {formattedData.btnText}
           </button>
         </div>
-        <div className="tableOfContentCards text-white"></div>
+
+        <div className="row mt-5 booksData">
+          {bookContentData.map((item) => (
+            <div className="col-md-6 col-sm-6">
+              <ul className="text-white bg-dark rounded p-4 ">
+                <div>
+                  <li>
+                    <a href="#"> {item.chapterName}</a>
+                  </li>
+                  {item.data.map((item) =>
+                    item.isList ? (
+                      <div>
+                        <li> {item.topic}</li>
+
+                        {item.subTopics.map((item) => (
+                          <ul>
+                            <li>{item}</li>
+                          </ul>
+                        ))}
+                      </div>
+                    ) : (
+                      <li>{item.topic}</li>
+                    )
+                  )}
+                </div>
+              </ul>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

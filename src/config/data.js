@@ -68,7 +68,7 @@ export const formattedData = {
 //   },
 // ];
 
-export const contentData = [
+export const bookContentData = [
   {
     chapterName: "Introduction",
     data: [
@@ -88,6 +88,47 @@ export const contentData = [
         topic: "ScreenShots  ",
         isList: true,
         subTopics: ["customer pages", "admin pages"],
+      },
+    ],
+  },
+  {
+    chapterName:
+      "Chapter 5: Book data model. Chapter data model. MongoDB index. API infrastructure and user roles. Read chapter API.",
+    data: [
+      {
+        topic: "Book data model",
+        isList: true,
+        subTopics: [
+          "Schema for Book data model",
+          "Static methods for Book data model",
+        ],
+      },
+      {
+        topic: "Chapter data model",
+        isList: true,
+        subTopics: [
+          "Schema for Chapter data model",
+          "Static methods for Chapter data model",
+        ],
+      },
+      {
+        topic: "MongoDB index",
+        isList: false,
+      },
+      {
+        topic: "API infrastructure and user roles",
+        isList: true,
+        subTopics: [
+          "Pages and components for user roles",
+          "API methods by user roles",
+          "Express routes by user roles",
+          "Custom routing for pages",
+        ],
+      },
+      {
+        topic: "Read chapter API",
+        isList: true,
+        subTopics: ["ReadChapter page", "Testing Read chapter API"],
       },
     ],
   },
@@ -118,9 +159,315 @@ export const contentData = [
         ],
       },
       {
-        topic: "ScreenShots  ",
+        topic: "Material UI Integration ",
         isList: true,
-        subTopics: ["customer pages", "admin pages"],
+        subTopics: [
+          "myDocument Component",
+          "Spread Operators",
+          "Theme and theme Provider ",
+          "Testing Next Js/Material Ui Integrations",
+        ],
+      },
+      {
+        topic: "ServerSide Rendering ",
+        isList: false,
+      },
+      {
+        topic: "Custom Styles",
+        isList: false,
+      },
+    ],
+  },
+  {
+    chapterName:
+      "Chapter 2: HTTP. Express server. Next-Express server, nodemon. Index.getInitialProps. User data model and mongoose. MongoDB database and dotenv. Testing server-database connection. Retrieving document. Session and cookie. MenuWithAvatar and Header components.",
+    data: [
+      {
+        topic: "HTTP ",
+        isList: false,
+      },
+      {
+        topic: "Express server",
+        isList: true,
+        subTopics: [
+          "Next-Express server, nodemon",
+          "Index.getInitialProps",
+          "Testing new server",
+        ],
+      },
+      {
+        topic: "User data model and mongoose ",
+        isList: false,
+      },
+      {
+        topic: "MongoDB database and dotenv",
+        isList: true,
+        subTopics: [
+          "Testing server-database connection",
+          "Retrieving document",
+        ],
+      },
+      {
+        topic: "Session ",
+        isList: true,
+        subTopics: [
+          "Configure session",
+          "Save session",
+          "Testing session and cookie",
+        ],
+      },
+      {
+        topic: "MenuWithAvatar and Header components",
+        isList: false,
+      },
+    ],
+  },
+  {
+    chapterName:
+      "Chapter 3: Authentication HOC. getInitialProps method. Login page and NProgress. Asynchronous execution. Promise.then. async/await. Google Oauth API infrastructure. setupGoogle, verify, passport, strategy. Express routes /auth/google, /oauth2callback, /logout. generateSlug. this. Set up at Google Cloud Platform.",
+    data: [
+      {
+        topic: "Authentication HOC withAuth ",
+        isList: true,
+        subTopics: [
+          "getInitialProps method",
+
+          "Parameters for withAuth HOC",
+          "Testing withAuth",
+        ],
+      },
+      {
+        topic: "Login page and NProgress",
+        isList: false,
+      },
+      {
+        topic: "Asynchronous execution and callback",
+        isList: true,
+        subTopics: ["Promise.then", "async/await"],
+      },
+      {
+        topic: "Google Oauth API infrastructure",
+        isList: true,
+        subTopics: [
+          "setupGoogle, verify, passport and strategy",
+          "Express routes /auth/google /oauth2callback, /logout",
+          "User.publicFields and User.signInOrSignUp methods",
+          "generateSlug method",
+          "this",
+          "Set up at Google Cloud Platform and testing",
+        ],
+      },
+    ],
+  },
+  {
+    chapterName:
+      "Chapter 4: Testing method with Jest. Transactional email API with AWS SES service. Set up AWS SES service, security credentials. sendEmail method. Export and import syntax for server code. EmailTemplate data model. Update User.signInOrSignUp. Informational success/error messages. Notifier component. notify method.s",
+    data: [
+      {
+        topic: "Testing method with Jest",
+        isList: false,
+      },
+      {
+        topic: "Transactional email API with AWS SES service",
+        isList: true,
+        subTopics: [
+          "Set up AWS SES service, security",
+          "sendEmail method",
+          "Export and import syntax for server code",
+          "EmailTemplate data model, insertTemplates and getEmailTemplate methods",
+          "Update User.signInOrSignUp",
+          "Testing",
+        ],
+      },
+      {
+        topic: "Informational success/error messages",
+        isList: true,
+        subTopics: ["Notifier component", "notify method", "Example of usage"],
+      },
+      {
+        topic: "Google Oauth API infrastructure",
+        isList: true,
+        subTopics: [
+          "setupGoogle, verify, passport and strategy",
+          "Express routes /auth/google /oauth2callback, /logout",
+          "User.publicFields and User.signInOrSignUp methods",
+          "generateSlug method",
+          "this",
+          "Set up at Google Cloud Platform and testing",
+        ],
+      },
+    ],
+  },
+
+  {
+    chapterName:
+      "Chapter 6: Set up Github API infrastructure. Sync content API infrastructure. Missing UI infrastructure for Admin user. Two improvements. Testing.",
+    data: [
+      {
+        topic: "Set up Github API infrastructure",
+        isList: true,
+        subTopics: ["setupGithub method", "Github-related Express routes"],
+      },
+      {
+        topic: "Sync content API infrastructure",
+        isList: true,
+        subTopics: [
+          "Github server-side methods",
+          "Book.syncContent and Chapter.syncContent",
+          "markdownToHtml and getSections methods",
+          "Express routes for Admin user",
+          "API methods for Admin user",
+        ],
+      },
+      {
+        topic: "Missing UI infrastructure for Admin user",
+        isList: false,
+      },
+      {
+        topic: "Two improvements",
+        isList: true,
+        subTopics: [
+          "routesWithSlug",
+          "Redirect UX for Admin and Customer users",
+        ],
+      },
+      {
+        topic: "Testing",
+        isList: true,
+        subTopics: [
+          "Connecting Github",
+          "Adding new book",
+          "Adding new book",
+          "Syncing content",
+        ],
+      },
+    ],
+  },
+  {
+    chapterName:
+      "Chapter 7: Table of Contents. Sections. Sidebar. Toggle TOC. Highlight for section. Active section. Hide Header. Mobile browser.",
+    data: [
+      {
+        topic: "Table of Contents",
+        isList: true,
+        subTopics: ["Sections", "Sidebar", "Toggle TOC"],
+      },
+      {
+        topic: "Highlight for section",
+        isList: true,
+        subTopics: ["Active section"],
+      },
+      {
+        topic: "Hide Header",
+        isList: false,
+      },
+      {
+        topic: "Mobile browser",
+        isList: false,
+      },
+    ],
+  },
+  {
+    chapterName:
+      "Chapter 8: BuyButton component. Buy book API infrastructure. Setup at Stripe dashboard and environmental variables. isPurchased and ReadChapter page. Redirect. My books API and MyBooks page. Mailchimp API.",
+    data: [
+      {
+        topic: "BuyButton component",
+        isList: false,
+      },
+      {
+        topic: "Buy book API infrastructure",
+        isList: true,
+        subTopics: [
+          "fetchCheckoutSessionApiMethod API method",
+          "Express route /stripe/fetch-checkout-session",
+          "Stripe method createSession",
+          "Express route for request from Stripe server, retrieveSession",
+        ],
+      },
+      {
+        topic: "Setup at Stripe dashboard and environmental variables",
+        isList: true,
+        subTopics: ["Static method Book.buy", "Purchase data model"],
+      },
+      {
+        topic: "isPurchased and ReadChapter page",
+        isList: true,
+        subTopics: [
+          "isPurchased, preview and full content",
+          "Adding BuyButton to ReadChapter",
+          "Testing Buy book API",
+        ],
+      },
+      {
+        topic: "Redirect",
+        isList: false,
+      },
+      {
+        topic: "My books API and MyBooks page",
+        isList: true,
+        subTopics: [
+          "getMyBookListApiMethod API method",
+          "getMyBookListApiMethod API method",
+          "Static method Book.getPurchasedBooks",
+        ],
+      },
+      {
+        topic: "Mailchimp API",
+        isList: true,
+        subTopics: [
+          "callAPI method",
+          "addToMailchimp method",
+          "Adding addToMailchimp to",
+          "Environmental variables for Mailchimp API",
+          "Testing Mailchimp API",
+        ],
+      },
+    ],
+  },
+  {
+    chapterName:
+      "Chapter 9: Prepare project for deployment. Environmental variables, production/development. Logger. SEO, robots.txt, sitemap.xml. Compression and security. Deploy project. Heroku. Testing deployed project. AWS Elastic Beanstalk.",
+    data: [
+      {
+        topic: "Prepare project for deployment",
+        isList: true,
+        subTopics: [
+          "Environmental variables",
+          "Logger",
+          "SEO: robots.txt, sitemap.xml",
+          "Google Analytics",
+          "Compression and security",
+          "Express route /_next/*",
+        ],
+      },
+      {
+        topic: "Self-hosted fonts",
+        isList: false,
+      },
+      {
+        topic: "AWS Cloudfront",
+        isList: false,
+      },
+      {
+        topic: "Material icons",
+        isList: false,
+      },
+      {
+        topic: "Refactor class component into functional",
+        isList: false,
+      },
+      {
+        topic: "Next.js SSR/CSR",
+        isList: false,
+      },
+      {
+        topic: "React lifecycle methods",
+        isList: false,
+      },
+      {
+        topic: "Next.js v13, other package upgrades",
+        isList: false,
       },
     ],
   },
@@ -154,3 +501,25 @@ export const cardData = [
       "The authors are particularly receptive to open-source issues and pull-requests; this made my experience very worthwhile. Strongly recommend to those going from junior to middleweight JavaScript developers",
   },
 ];
+export const Footer = {
+  headingOfFooter: "Authors",
+  subHeadingofFooter: "Full stack team",
+  authorsData: [
+    {
+      kellyImg: "https://storage.googleapis.com/builderbook/kelly-picture.png",
+      name: "Kelly",
+    },
+    {
+      kellyImg: "https://storage.googleapis.com/builderbook/timur-picture.png",
+      name: "Timur",
+    },
+  ],
+  footerData: [
+    "maintain two popular repos - saas and builderbook (combined: close to 6000 stars and 1000 unique visitors per week).",
+    "built and maintain the most popular React/Typescript/Node boilerplate for starting SaaS business.",
+    "built over a dozen SaaS web applications in the last 5 years.",
+    "built Async, urgent vs non-urgent team communication tool, and currently run it as a ramen-profitable SaaS business.",
+    "built Work in biotech, growing niche job board for small biotech startups.",
+    "offer custom development service that is well above ramen profitable.",
+  ],
+};

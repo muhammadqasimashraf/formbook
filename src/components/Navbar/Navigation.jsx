@@ -6,26 +6,33 @@ import Container from "react-bootstrap/Container";
 import Builderbook from "../../pages/builderBook/Builderbook";
 import SaasBiolerPlate from "../../pages/saasBoilerPlate/SaasBiolerPlate";
 import Reviews from "../../pages/reviews/Reviews";
+import logo from "../../assets/img/logo.svg";
 
 function Navigation() {
   return (
     <Router>
-      <Navbar bg="light" expand="lg">
+      <Navbar expand="lg" className="navbar">
         <Container>
           <Navbar.Brand as={Link} to="/">
-            React Bootstrap Navbar
+            <img class="navbar-brand" src={logo} alt="logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbar-nav" />
           <Navbar.Collapse id="navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="ml-auto">
               <Nav.Link as={Link} to="/" exact>
-                BuilderBook
+                <a href="#" className="navlink">
+                  Book 1: Builder Book
+                </a>
               </Nav.Link>
               <Nav.Link as={Link} to="/saasboilerplate">
-                SaasBoilerPlate
+                <a href="#" className="navlink">
+                  Book 2: Saas Boiler Plate
+                </a>
               </Nav.Link>
               <Nav.Link as={Link} to="/reviews">
-                Reviews
+                <a href="#" className="navlink">
+                  Reviews
+                </a>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

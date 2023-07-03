@@ -44,7 +44,8 @@ body {
 .btn-text {
   font-size: 0.875rem !important;
 }
-.page1 {
+.page1,
+.booksData {
   padding: 10px 8%;
 }
 .cardContainer {
@@ -61,4 +62,10 @@ body {
   word-spacing: 0.01rem;
   padding: 20px 10px;
   font-family: Roboto, sans-serif;
+}
+.navbar {
+  background-color: #424242;
+}
+.navlink {
+  text-decoration: underline;
 }
