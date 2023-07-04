@@ -13,7 +13,7 @@ import "./Navigation.css";
 function Navigation() {
   return (
     <Navbar expand="lg" className="navbar">
-      <Container>
+      <Container fluid>
         <Navbar.Brand as={Link} to="/">
           <img className="navbar-brand" src={logo} alt="logo" />
         </Navbar.Brand>
@@ -21,7 +21,7 @@ function Navigation() {
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ml-auto">
             <Nav.Link as={NavLink} to="/" exact>
-              <a href="#" className="navlink">
+              <a href="#" className="navlink mb-2">
                 Book 1: Builder Book
               </a>
             </Nav.Link>
@@ -30,19 +30,19 @@ function Navigation() {
               to="/saasboilerplate"
               activeClassName="active"
             >
-              <a href="#" className="navlink">
-                Book 2: Saas Boiler Plate
+              <a href="#" className="navlink mb-2">
+                Book 2: SaaS Boilerplate
               </a>
             </Nav.Link>
             <Nav.Link as={NavLink} to="/reviews" activeClassName="active">
-              <a href="#" className="navlink">
+              <a href="#" className="navlink mb-2">
                 Reviews
               </a>
             </Nav.Link>
             <Nav.Link as={Link} to="/reviews">
               <button
                 type="button"
-                className="navlink border-light text-white btn shadow-none ml-3"
+                className="navlink border-light text-white btn shadow-none ml-3 navBtn"
               >
                 <span className="p-3">Login</span>
               </button>
