@@ -21,30 +21,36 @@ function Navigation() {
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ml-auto">
             <Nav.Link as={NavLink} to="/" exact>
-              <a href="#" className="navlink mb-2">
-                Book 1: Builder Book
-              </a>
+              <div className="navLinkDiv mt-2 ml-2">
+                <a href="#" className="navlink mb-2">
+                  Book 1: Builder Book
+                </a>
+              </div>
             </Nav.Link>
             <Nav.Link
               as={NavLink}
               to="/saasboilerplate"
               activeClassName="active"
             >
-              <a href="#" className="navlink mb-2">
-                Book 2: SaaS Boilerplate
-              </a>
+              <div className="navLinkDiv mt-2 ml-2">
+                <a href="#" className="navlink mb-2">
+                  Book 2: SaaS Boilerplate
+                </a>
+              </div>
             </Nav.Link>
             <Nav.Link as={NavLink} to="/reviews" activeClassName="active">
-              <a href="#" className="navlink mb-2">
-                Reviews
-              </a>
+              <div className="navLinkDiv mt-2 ml-2">
+                <a href="#" className="navlink mb-2">
+                  Reviews
+                </a>
+              </div>
             </Nav.Link>
             <Nav.Link as={Link} to="/reviews">
               <button
                 type="button"
-                className="navlink border-light text-white btn shadow-none ml-3 navBtn"
+                className="navlink  text-white btn shadow-none ml-3 navbtn"
               >
-                <span className="p-3">Login</span>
+                <span>Login</span>
               </button>
             </Nav.Link>
           </Nav>

@@ -19,7 +19,7 @@ const Builderbook = () => {
     <div>
       <div className="text-white page1 text-center">
         <div className="heading">
-          <h1 className="mt-5 mb-4">{BookIntroduction.heading}</h1>
+          <h1 className="mt-4 mb-4">{BookIntroduction.heading}</h1>
         </div>
         <div className="row btn-holder m-0 justify-content-around">
           <div className="mb-3">
@@ -32,9 +32,7 @@ const Builderbook = () => {
             </button>
           </div>
         </div>
-        <div className="content container small">
-          {BookIntroduction.subHeading}
-        </div>
+        <div className="subheading">{BookIntroduction.subHeading}</div>
         <button type="button" className="btn btn-success btn-sm btn-text mt-5">
           {BookIntroduction.previewbtnText}
         </button>
@@ -44,13 +42,13 @@ const Builderbook = () => {
           <Card item={item} />
         ))}
       </div>
-      <div className="buttons d-flex justify-content-center align-items-center mt-2 ">
-        <button className="p-2 m-3  border-light text-white btn shadow-none">
-          <span className="p-3">See all Reviews</span>
+      <div className="buttons d-flex justify-content-center align-items-center ">
+        <button className=" m-3 text-white btn shadow-none ml-3 navbtn">
+          <span>See all Reviews</span>
         </button>
-        <button className="p-2 m-3 text-white border-light btn shadow-none">
+        <button className=" m-3 text-white btn shadow-none ml-3 navbtn">
           {" "}
-          <span className="p-3">About Us</span>
+          <span>About Us</span>
         </button>
       </div>
       <h1 className="text-center text-white mt-3">
@@ -82,9 +80,11 @@ const Builderbook = () => {
             <div className=" col-lg-6 col-md-12 col-sm-12">
               <ul className="text-white bg-dark rounded p-4 ">
                 <div>
-                  <li>
-                    <a href="#"> {item.chapterName}</a>
-                  </li>
+                  <a href="#" className="chapterLink">
+                    {" "}
+                    {item.chapterName}
+                  </a>
+
                   {item.data.map((item) =>
                     item.isList ? (
                       <div>
@@ -112,12 +112,17 @@ const Builderbook = () => {
           <div className="row">
             {Footer.authorsData.map((item) => (
               <div className="col-md-6 col-lg-6 col-sm-12">
-                <img
-                  src={item.img}
-                  alt=""
-                  className="w-75px rounded-circle text-center "
-                  width={80}
-                />
+                <div>
+                  <img
+                    src={item.img}
+                    alt=""
+                    className="w-75px rounded-circle text-center mb-3 "
+                    width={80}
+                  />
+                </div>
+                <a href="#" className="mt-5 authorUrl">
+                  {item.name}
+                </a>
               </div>
             ))}
 

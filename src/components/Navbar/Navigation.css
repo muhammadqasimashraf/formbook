@@ -9,5 +9,13 @@
 .navbar {
   background-color: #424242;
   height: 64px;
-  padding: 24px !important;
+  padding: 0 24px !important;
+}
+.navbtn {
+  font-size: 14px !important;
+  text-decoration: none;
+  background-color: rgba(201, 209, 217, 0.08);
+  color: #c9d1d9;
+  border: 1px solid rgba(255, 255, 255, 0.23) !important;
+  padding: 5px 15px !important;
 }

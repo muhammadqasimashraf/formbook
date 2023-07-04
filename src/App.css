@@ -3,6 +3,13 @@ body {
   background-color: #0d1117 !important;
   font-size: 0.875rem !important;
 }
+.subheading {
+  font-size: 14px !important;
+  font-weight: 400;
+}
+button {
+  font-family: "IBM Plex Mono", monospace !important;
+}
 .btn-text {
   font-size: 0.875rem !important;
 }
@@ -22,7 +29,9 @@ body {
 .comment {
   letter-spacing: 0.01rem !important;
   word-spacing: 0.01rem;
-  padding: 20px 10px;
+  color: #c9d1d9;
+  padding: 10px 10px;
+  line-height: 1.43;
   font-family: Roboto, sans-serif;
 }
 
@@ -31,4 +40,22 @@ body {
 }
 .we {
   margin-right: 55%;
+}
+.reviewColor {
+  background-color: #424242;
+}
+.authorUrl,
+.chapterLink,
+.chapterLink:hover,
+.authorUrl:hover {
+  color: #58a6ff;
+  text-decoration: none;
+}
+.navbtn {
+  font-size: 14px !important;
+  text-decoration: none;
+  background-color: rgba(201, 209, 217, 0.08);
+  color: #c9d1d9;
+  border: 1px solid rgba(255, 255, 255, 0.23);
+  padding: 50px;
 }
