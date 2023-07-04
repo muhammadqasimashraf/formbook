@@ -1,5 +1,5 @@
 body {
-  font-family: "IBM Plex Mono", monospace !important;
+  font-family: IBM Plex Mono, monospace !important;
   background-color: #0d1117 !important;
   font-size: 0.875rem !important;
 }
@@ -8,13 +8,14 @@ body {
   font-weight: 400;
 }
 button {
-  font-family: "IBM Plex Mono", monospace !important;
+  font-family: IBM Plex Mono, monospace !important;
 }
 .btn-text {
   font-size: 0.875rem !important;
 }
 .page1,
-.booksData {
+.booksData,
+.reviewsPage {
   padding: 10px 8%;
 }
 .cardContainer {
@@ -47,7 +48,11 @@ button {
 .authorUrl,
 .chapterLink,
 .chapterLink:hover,
-.authorUrl:hover {
+.authorUrl:hover,
+.builderbook,
+.builderbook:hover,
+.saas,
+.saas:hover {
   color: #58a6ff;
   text-decoration: none;
 }
@@ -57,5 +62,21 @@ button {
   background-color: rgba(201, 209, 217, 0.08);
   color: #c9d1d9;
   border: 1px solid rgba(255, 255, 255, 0.23);
-  padding: 50px;
+  padding: 10px 15px;
+}
+.navbtn {
+  padding: 5px 15px;
+}
+.authorsPadding {
+  padding-bottom: 80px;
+}
+.footerRow {
+  background-color: #424242;
+  height: 64px;
+}
+.reviewsHeading {
+  text-align: center;
+  font-weight: 400;
+  line-height: 60px;
+  font-size: 44px;
 }

@@ -15,13 +15,13 @@ function Navigation() {
     <Navbar expand="lg" className="navbar">
       <Container fluid>
         <Navbar.Brand as={Link} to="/">
-          <img className="navbar-brand" src={logo} alt="logo" />
+          <img className="navbar-brand" src={logo} alt="logo" width={40} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ml-auto">
             <Nav.Link as={NavLink} to="/" exact>
-              <div className="navLinkDiv mt-2 ml-2">
+              <div className="navLinkDiv mt-1 ml-3">
                 <a href="#" className="navlink mb-2">
                   Book 1: Builder Book
                 </a>
@@ -32,14 +32,14 @@ function Navigation() {
               to="/saasboilerplate"
               activeClassName="active"
             >
-              <div className="navLinkDiv mt-2 ml-2">
+              <div className="navLinkDiv mt-1 ml-3">
                 <a href="#" className="navlink mb-2">
                   Book 2: SaaS Boilerplate
                 </a>
               </div>
             </Nav.Link>
             <Nav.Link as={NavLink} to="/reviews" activeClassName="active">
-              <div className="navLinkDiv mt-2 ml-2">
+              <div className="navLinkDiv mt-1 ml-3">
                 <a href="#" className="navlink mb-2">
                   Reviews
                 </a>
@@ -50,7 +50,7 @@ function Navigation() {
                 type="button"
                 className="navlink  text-white btn shadow-none ml-3 navbtn"
               >
-                <span>Login</span>
+                <span>Log in</span>
               </button>
             </Nav.Link>
           </Nav>

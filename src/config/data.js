@@ -1,5 +1,3 @@
-import Builderbook from "../pages/builderBook/Builderbook";
-
 export const BookIntroduction = {
   heading: "Book 1: Builder Book",
   subHeading:
@@ -8,7 +6,7 @@ export const BookIntroduction = {
   whyBookHeading: "Why this book?",
   tableofcontentHeading: "Table Of Contents",
 
-  bookContent: [
+  features: [
     {
       paragraphHeading: "Robust JavaScript stack",
       paragraph:
@@ -68,10 +66,10 @@ export const BookIntroduction = {
 //   },
 // ];
 
-export const bookContentData = [
+export const chapters = [
   {
     chapterName: "Introduction",
-    data: [
+    topics: [
       {
         topic: "what you will learn ",
         isList: false,
@@ -94,7 +92,7 @@ export const bookContentData = [
   {
     chapterName:
       "Chapter 5: Book data model. Chapter data model. MongoDB index. API infrastructure and user roles. Read chapter API.",
-    data: [
+    topics: [
       {
         topic: "Book data model",
         isList: true,
@@ -135,7 +133,7 @@ export const bookContentData = [
   {
     chapterName:
       "Chapter 1: Set up Node.js project. VS code editor and lint. Set up Next.js project. Material-UI integration. Server-side rendering. Custom styles.",
-    data: [
+    topics: [
       {
         topic: "Set up Node.js project ",
         isList: true,
@@ -181,7 +179,7 @@ export const bookContentData = [
   {
     chapterName:
       "Chapter 2: HTTP. Express server. Next-Express server, nodemon. Index.getInitialProps. User data model and mongoose. MongoDB database and dotenv. Testing server-database connection. Retrieving document. Session and cookie. MenuWithAvatar and Header components.",
-    data: [
+    topics: [
       {
         topic: "HTTP ",
         isList: false,
@@ -225,7 +223,7 @@ export const bookContentData = [
   {
     chapterName:
       "Chapter 3: Authentication HOC. getInitialProps method. Login page and NProgress. Asynchronous execution. Promise.then. async/await. Google Oauth API infrastructure. setupGoogle, verify, passport, strategy. Express routes /auth/google, /oauth2callback, /logout. generateSlug. this. Set up at Google Cloud Platform.",
-    data: [
+    topics: [
       {
         topic: "Authentication HOC withAuth ",
         isList: true,
@@ -262,7 +260,7 @@ export const bookContentData = [
   {
     chapterName:
       "Chapter 4: Testing method with Jest. Transactional email API with AWS SES service. Set up AWS SES service, security credentials. sendEmail method. Export and import syntax for server code. EmailTemplate data model. Update User.signInOrSignUp. Informational success/error messages. Notifier component. notify method.s",
-    data: [
+    topics: [
       {
         topic: "Testing method with Jest",
         isList: false,
@@ -302,7 +300,7 @@ export const bookContentData = [
   {
     chapterName:
       "Chapter 6: Set up Github API infrastructure. Sync content API infrastructure. Missing UI infrastructure for Admin user. Two improvements. Testing.",
-    data: [
+    topics: [
       {
         topic: "Set up Github API infrastructure",
         isList: true,
@@ -346,7 +344,7 @@ export const bookContentData = [
   {
     chapterName:
       "Chapter 7: Table of Contents. Sections. Sidebar. Toggle TOC. Highlight for section. Active section. Hide Header. Mobile browser.",
-    data: [
+    topics: [
       {
         topic: "Table of Contents",
         isList: true,
@@ -370,7 +368,7 @@ export const bookContentData = [
   {
     chapterName:
       "Chapter 8: BuyButton component. Buy book API infrastructure. Setup at Stripe dashboard and environmental variables. isPurchased and ReadChapter page. Redirect. My books API and MyBooks page. Mailchimp API.",
-    data: [
+    topics: [
       {
         topic: "BuyButton component",
         isList: false,
@@ -428,7 +426,7 @@ export const bookContentData = [
   {
     chapterName:
       "Chapter 9: Prepare project for deployment. Environmental variables, production/development. Logger. SEO, robots.txt, sitemap.xml. Compression and security. Deploy project. Heroku. Testing deployed project. AWS Elastic Beanstalk.",
-    data: [
+    topics: [
       {
         topic: "Prepare project for deployment",
         isList: true,
@@ -472,7 +470,7 @@ export const bookContentData = [
     ],
   },
 ];
-export const cardData = [
+export const Reviews = [
   {
     urlThumbnail:
       "https://d2w0479rccr6dx.cloudfront.net/book-reviews/sam-reaves-picture.jpeg",
@@ -501,7 +499,7 @@ export const cardData = [
       "The authors are particularly receptive to open-source issues and pull-requests; this made my experience very worthwhile. Strongly recommend to those going from junior to middleweight JavaScript developers",
   },
 ];
-export const Footer = {
+export const Authors = {
   headingOfFooter: "Authors",
   subHeadingofFooter: "Full stack team",
   authorsData: [
@@ -528,4 +526,20 @@ export const aboutUs = [
   " built Async, open source team communcation web app to separate urgent vs non-urgent conversations.",
   "   built Work in biotech, growing niche job board for small biotech startups.",
   "  built over a dozen SaaS web applications in the last 5 years and offer custom development service: async-labs.com",
+];
+export const ReviewsPage = [
+  {
+    urlThumbnail:
+      "	https://d2w0479rccr6dx.cloudfront.net/book-reviews/paulparks-picture.jpeg",
+    name: "Paul Parks",
+    review:
+      "I am primarily a backend engineer who has not been exposed to too much front end or web development. Builderbook has been a great resource that has allowed me to learn several frameworks and design patterns with ease.",
+  },
+  {
+    urlThumbnail:
+      "	https://d2w0479rccr6dx.cloudfront.net/book-reviews/patrickcaughey-picture.jpeg",
+    name: "Patrick Caughey",
+    review:
+      "The SaaS Boilerplate book has been super helpful. The first few chapters got me up and running very quickly, and as I re-read them I continued to learn more about the 'why' behind the decisions you made. It's been fun and quite informative!",
+  },
 ];

@@ -6,6 +6,7 @@ import Reviews from "./pages/reviews/Reviews";
 import Navigation from "./components/Navbar/Navigation";
 import Login from "./pages/login/Login";
 import Container from "react-bootstrap/Container";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/reviews" element={<Reviews />} />
           </Routes>
         </Container>
+        <Footer />
       </Router>
     </div>
   );

@@ -6,11 +6,12 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 import {
-  cardData,
+  Reviews,
   BookIntroduction,
-  bookContentData,
-  Footer,
+  chapters,
+  Authors,
   aboutUs,
+  features,
 } from "../../config/data";
 import Card from "../../components/Card/Card";
 
@@ -38,15 +39,15 @@ const Builderbook = () => {
         </button>
       </div>
       <div className="row mx-0 mt-5 cardContainer">
-        {cardData.map((item) => (
+        {Reviews.map((item) => (
           <Card item={item} />
         ))}
       </div>
-      <div className="buttons d-flex justify-content-center align-items-center ">
-        <button className=" m-3 text-white btn shadow-none ml-3 navbtn">
+      <div className="buttons d-flex justify-content-center align-items-center mt-2 ">
+        <button className="m-3 text-white btn shadow-none ml-3 navbtn">
           <span>See all Reviews</span>
         </button>
-        <button className=" m-3 text-white btn shadow-none ml-3 navbtn">
+        <button className="m-3 text-white btn shadow-none ml-3 navbtn">
           {" "}
           <span>About Us</span>
         </button>
@@ -57,15 +58,15 @@ const Builderbook = () => {
       </h1>
 
       <div>
-        <div className="row mt-5 text-align-left">
-          {BookIntroduction.bookContent.map((item, index) => (
+        <div className="row mt-3 text-align-left">
+          {BookIntroduction.features.map((item, index) => (
             <div key={index} className="text-white col-lg-6 mt-5">
               <p className="font-weight-bold">{item.paragraphHeading}</p>
               <p>{item.paragraph}</p>
             </div>
           ))}
         </div>
-        <div className="text-white text-center">
+        <div className="text-white text-center mt-5">
           <h1>{BookIntroduction.tableofcontentHeading}</h1>
           <button
             type="button"
@@ -76,7 +77,7 @@ const Builderbook = () => {
         </div>
 
         <div className="row mt-5 booksData">
-          {bookContentData.map((item) => (
+          {chapters.map((item) => (
             <div className=" col-lg-6 col-md-12 col-sm-12">
               <ul className="text-white bg-dark rounded p-4 ">
                 <div>
@@ -85,7 +86,7 @@ const Builderbook = () => {
                     {item.chapterName}
                   </a>
 
-                  {item.data.map((item) =>
+                  {item.topics.map((item) =>
                     item.isList ? (
                       <div>
                         <li> {item.topic}</li>
@@ -107,10 +108,10 @@ const Builderbook = () => {
         </div>
 
         <div className="text-center text-white mt-5">
-          <h1> {Footer.headingOfFooter}</h1>
-          <p>{Footer.subHeadingofFooter}</p>
+          <h1> {Authors.headingOfAuthors}</h1>
+          <p>{Authors.subHeadingofAuthors}</p>
           <div className="row">
-            {Footer.authorsData.map((item) => (
+            {Authors.authorsData.map((item) => (
               <div className="col-md-6 col-lg-6 col-sm-12">
                 <div>
                   <img
@@ -126,7 +127,7 @@ const Builderbook = () => {
               </div>
             ))}
 
-            <div className="col-lg-12 col-md-12 col-sm-12 mt-5 ">
+            <div className="col-lg-12 col-md-12 col-sm-12 mt-5 authorsPadding ">
               <span className="we">WE:</span>
               <ul className="about-us text-left">
                 {aboutUs.map((item) => (
