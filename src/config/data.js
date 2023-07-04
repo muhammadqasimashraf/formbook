@@ -542,4 +542,11 @@ export const ReviewsPage = [
     review:
       "The SaaS Boilerplate book has been super helpful. The first few chapters got me up and running very quickly, and as I re-read them I continued to learn more about the 'why' behind the decisions you made. It's been fun and quite informative!",
   },
+  {
+    urlThumbnail:
+      "		https://d2w0479rccr6dx.cloudfront.net/book-reviews/aleksandrs-savkins-picture.jpeg",
+    name: "Aleksandrs Savkins",
+    review:
+      "The book is exactly what I was looking for - I needed some guide that will cover the entire processes of creating web apps and saas. I didn't want to waste time and go through many guides, the book is a huge time saver!",
+  },
 ];

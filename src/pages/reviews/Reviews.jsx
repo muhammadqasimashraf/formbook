@@ -1,5 +1,6 @@
 import React from "react";
-
+import { ReviewsPage } from "../../config/data";
+import ReviewsPageCard from "../../components/ReviewsPageCard/ReviewsPageCard";
 const Reviews = () => {
   return (
     <div className="reviewsPage">
@@ -21,6 +22,11 @@ const Reviews = () => {
           </a>{" "}
           ).
         </p>
+      </div>
+      <div className="row mx-0 mt-5 cardContainer">
+        {ReviewsPage.map((item) => (
+          <ReviewsPageCard item={item} />
+        ))}
       </div>
     </div>
   );
