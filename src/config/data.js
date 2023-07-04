@@ -1,11 +1,11 @@
 import Builderbook from "../pages/builderBook/Builderbook";
 
-export const formattedData = {
+export const BookIntroduction = {
   heading: "Book 1: Builder Book",
   subHeading:
     "Learn how to build a full-stack, production-ready JavaScript web application from scratch\\n. Unlike online tutorials, which can be outdated, disjointed, and frustrating to fit together, our book gives you a structured, up-to-date guide on building a complete web app from start to finish.",
-  btnText: "Preview & buy book for $99",
-  heading2: "Why this book?",
+  previewbtnText: "Preview & buy book for $99",
+  whyBookHeading: "Why this book?",
   tableofcontentHeading: "Table Of Contents",
 
   bookContent: [
@@ -506,11 +506,11 @@ export const Footer = {
   subHeadingofFooter: "Full stack team",
   authorsData: [
     {
-      kellyImg: "https://storage.googleapis.com/builderbook/kelly-picture.png",
+      img: "https://storage.googleapis.com/builderbook/kelly-picture.png",
       name: "Kelly",
     },
     {
-      kellyImg: "https://storage.googleapis.com/builderbook/timur-picture.png",
+      img: "https://storage.googleapis.com/builderbook/timur-picture.png",
       name: "Timur",
     },
   ],
@@ -523,3 +523,9 @@ export const Footer = {
     "offer custom development service that is well above ramen profitable.",
   ],
 };
+export const aboutUs = [
+  "   maintain two popular repos - saas and builderbook (combined:over 6000 stars and 1000 unique visitors per week).",
+  " built Async, open source team communcation web app to separate urgent vs non-urgent conversations.",
+  "   built Work in biotech, growing niche job board for small biotech startups.",
+  "  built over a dozen SaaS web applications in the last 5 years and offer custom development service: async-labs.com",
+];

@@ -63,9 +63,10 @@ body {
   padding: 20px 10px;
   font-family: Roboto, sans-serif;
 }
-.navbar {
-  background-color: #424242;
+
+.about-us {
+  padding: 0 25%;
 }
-.navlink {
-  text-decoration: underline;
+.we {
+  margin-right: 55%;
 }
