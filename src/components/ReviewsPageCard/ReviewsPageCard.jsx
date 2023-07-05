@@ -5,8 +5,8 @@ const ReviewsPageCard = ({ item }) => {
   let url = "#";
 
   return (
-    <div className=" col-lg-4 col-md-6 col-sm-6 text-white cardWidth mb-3 pl-0 ">
-      <div className="data p-3 mb-2 reviewColor h-100 rounded">
+    <div className=" col-lg-4 col-md-6 col-sm-6 text-white cardWidth mb-3 pl-0 page1 ">
+      <div className="data p-3 mb-2 reviewColor h-100 rounded ">
         <div className="img mt-2 mb-2 text-center">
           <img
             src={item.urlThumbnail}

@@ -1,7 +1,8 @@
 export const BookIntroduction = {
   heading: "Book 1: Builder Book",
   subHeading:
-    "Learn how to build a full-stack, production-ready JavaScript web application from scratch\\n. Unlike online tutorials, which can be outdated, disjointed, and frustrating to fit together, our book gives you a structured, up-to-date guide on building a complete web app from start to finish.",
+    "Learn how to build a full-stack, production-ready JavaScript web application from scratch",
+
   previewbtnText: "Preview & buy book for $99",
   whyBookHeading: "Why this book?",
   tableofcontentHeading: "Table Of Contents",
@@ -82,6 +83,7 @@ export const chapters = [
         topic: "Project Structure  ",
         isList: false,
       },
+
       {
         topic: "ScreenShots  ",
         isList: true,
@@ -476,7 +478,7 @@ export const Reviews = [
       "https://d2w0479rccr6dx.cloudfront.net/book-reviews/sam-reaves-picture.jpeg",
     name: "Sam Reaves",
     comment:
-      "I use Udemy for learning specific technologies but chose Builder Book after being impressed with their website being the actual project you build. The up to date, step by step instructions made creating the app a breeze.",
+      '"I use Udemy for learning specific technologies but chose Builder Book after being impressed with their website being the actual project you build. The up to date, step by step instructions made creating the app a breeze.',
   },
   {
     urlThumbnail:
@@ -547,6 +549,6 @@ export const ReviewsPage = [
       "		https://d2w0479rccr6dx.cloudfront.net/book-reviews/aleksandrs-savkins-picture.jpeg",
     name: "Aleksandrs Savkins",
     review:
-      "The book is exactly what I was looking for - I needed some guide that will cover the entire processes of creating web apps and saas. I didn't want to waste time and go through many guides, the book is a huge time saver!",
+      "The book is exactly what I The book is exactly what I was looking foThe book is exactly what I was looking fowas looking forThe book is exactly what I was looking foThe book is exactly what I was looking foThe book is exactly what I was looking fo - I needed some guide that will cover the entire processes of creating web apps and saas. I didn't want to waste time and go through many guides, the book is a huge time saver!",
   },
 ];

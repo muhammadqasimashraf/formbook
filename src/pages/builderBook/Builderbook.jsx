@@ -38,7 +38,7 @@ const Builderbook = () => {
           {BookIntroduction.previewbtnText}
         </button>
       </div>
-      <div className="row mx-0 mt-5 cardContainer">
+      <div className="row mx-0 mt-5 cardContainer cardPadding">
         {Reviews.map((item) => (
           <Card item={item} />
         ))}
@@ -58,7 +58,7 @@ const Builderbook = () => {
       </h1>
 
       <div>
-        <div className="row mt-3 text-align-left">
+        <div className="row mt-3 text-align-left cardPadding">
           {BookIntroduction.features.map((item, index) => (
             <div key={index} className="text-white col-lg-6 mt-5">
               <p className="font-weight-bold">{item.paragraphHeading}</p>
@@ -76,7 +76,7 @@ const Builderbook = () => {
           </button>
         </div>
 
-        <div className="row mt-5 booksData">
+        <div className="row mt-5 booksData ">
           {chapters.map((item) => (
             <div className=" col-lg-6 col-md-12 col-sm-12">
               <ul className="text-white bg-dark rounded p-4 ">
@@ -105,35 +105,35 @@ const Builderbook = () => {
               </ul>
             </div>
           ))}
-        </div>
 
-        <div className="text-center text-white mt-5">
-          <h1> {Authors.headingOfAuthors}</h1>
-          <p>{Authors.subHeadingofAuthors}</p>
-          <div className="row">
-            {Authors.authorsData.map((item) => (
-              <div className="col-md-6 col-lg-6 col-sm-12">
-                <div>
-                  <img
-                    src={item.img}
-                    alt=""
-                    className="w-75px rounded-circle text-center mb-3 "
-                    width={80}
-                  />
+          <div className="text-center text-white mt-5">
+            <h1> {Authors.headingOfAuthors}</h1>
+            <p>{Authors.subHeadingofAuthors}</p>
+            <div className="row">
+              {Authors.authorsData.map((item) => (
+                <div className="col-md-6 col-lg-6 col-sm-12">
+                  <div>
+                    <img
+                      src={item.img}
+                      alt=""
+                      className="w-75px rounded-circle text-center mb-3 "
+                      width={80}
+                    />
+                  </div>
+                  <a href="#" className="mt-5 authorUrl">
+                    {item.name}
+                  </a>
                 </div>
-                <a href="#" className="mt-5 authorUrl">
-                  {item.name}
-                </a>
-              </div>
-            ))}
+              ))}
 
-            <div className="col-lg-12 col-md-12 col-sm-12 mt-5 authorsPadding ">
-              <span className="we">WE:</span>
-              <ul className="about-us text-left">
-                {aboutUs.map((item) => (
-                  <li>{item}</li>
-                ))}
-              </ul>
+              <div className="col-lg-12 col-md-12 col-sm-12 mt-5 authorsPadding ">
+                <span className="we">WE:</span>
+                <ul className="about-us text-left">
+                  {aboutUs.map((item) => (
+                    <li>{item}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>

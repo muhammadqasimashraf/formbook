@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <Router>
         <Navigation />
-        <Container className="mt-3">
+        <Container fluid className="mt-3">
           <Routes>
             <Route exact path="/" element={<Builderbook />} />
             <Route path="/saasboilerplate" element={<SaasBiolerPlate />} />

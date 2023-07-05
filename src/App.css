@@ -14,8 +14,8 @@ button {
   font-size: 0.875rem !important;
 }
 .page1,
-.booksData,
-.reviewsPage {
+.reviewsPage,
+.cardPadding {
   padding: 10px 8%;
 }
 .cardContainer {
@@ -79,4 +79,7 @@ button {
   font-weight: 400;
   line-height: 60px;
   font-size: 44px;
+}
+.cardWidth {
+  padding: 10 8%;
 }
