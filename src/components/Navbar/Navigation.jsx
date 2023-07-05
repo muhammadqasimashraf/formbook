@@ -20,7 +20,7 @@ function Navigation() {
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link as={NavLink} to="/" exact>
+            <Nav.Link as={NavLink} to="/" exact className="nav-link">
               <div className="navLinkDiv mt-1 ml-3">
                 <a href="#" className="navlink mb-2">
                   Book 1: Builder Book
@@ -31,6 +31,7 @@ function Navigation() {
               as={NavLink}
               to="/saasboilerplate"
               activeClassName="active"
+              className="nav-link"
             >
               <div className="navLinkDiv mt-1 ml-3">
                 <a href="#" className="navlink mb-2">
@@ -38,7 +39,12 @@ function Navigation() {
                 </a>
               </div>
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/reviews" activeClassName="active">
+            <Nav.Link
+              as={NavLink}
+              to="/reviews"
+              activeClassName="active"
+              className="nav-link"
+            >
               <div className="navLinkDiv mt-1 ml-3">
                 <a href="#" className="navlink mb-2">
                   Reviews

@@ -1,11 +1,16 @@
-.active {
-  text-decoration: underline;
-  text-decoration-color: #58a6ff;
+.navbar .nav-link.active:after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #58a6ff;
+  margin-top: 2px;
 }
-.navlink,
 .navlink:hover {
-  color: #58a6ff;
   text-decoration: none;
+  color: #58a6ff;
+}
+.navlink {
+  color: #58a6ff;
   font-size: 13px !important;
 }
 .navbar {

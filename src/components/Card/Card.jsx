@@ -21,7 +21,7 @@ const Card = ({ item }) => {
             {item.name}
           </a>
         </div>
-        <div className="comment mt-3   mb-0">{item.comment}</div>
+        <div className="comment mt-3 featureDiv   mb-0">{item.comment}</div>
       </div>
     </div>
   );

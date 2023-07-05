@@ -90,6 +90,9 @@ button {
     padding: 0px !important;
     word-wrap: break-word;
   }
+  .featureDiv {
+    word-wrap: break-word;
+  }
   .bookHeadingOne,
   .tblOfContent {
     font-size: 1.5rem !important;

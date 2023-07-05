@@ -64,11 +64,11 @@ const Builderbook = () => {
       </h1>
 
       <div>
-        <div className="row mt-3 text-align-left cardPadding">
+        <div className="row mt-3 text-align-left cardPadding ">
           {BookIntroduction.features.map((item, index) => (
-            <div key={index} className="text-white col-lg-6 mt-5">
+            <div key={index} className="text-white col-lg-6 mt-5 ">
               <p className="font-weight-bold">{item.paragraphHeading}</p>
-              <p>{item.paragraph}</p>
+              <p className="featureDiv">{item.paragraph}</p>
             </div>
           ))}
         </div>
@@ -91,12 +91,15 @@ const Builderbook = () => {
                 <div>
                   <a href="#" className="chapterLink">
                     {" "}
-                    {item.chapterName}
+                    <div style={{ marginLeft: "-15px" }}>
+                      {" "}
+                      {item.chapterName}
+                    </div>
                   </a>
 
                   {item.topics.map((item) =>
                     item.isList ? (
-                      <div>
+                      <div className="ml-4">
                         <li> {item.topic}</li>
 
                         {item.subTopics.map((item) => (
@@ -106,7 +109,7 @@ const Builderbook = () => {
                         ))}
                       </div>
                     ) : (
-                      <div className="ml-3">
+                      <div className="ml-4">
                         <li>{item.topic}</li>
                       </div>
                     )
@@ -116,27 +119,28 @@ const Builderbook = () => {
             </div>
           ))}
 
-          <div className="text-center text-white mt-5">
+          <div className="text-center text-white mt-5 align-items-center d-flex justify-content-center align-items-center m-auto">
             <h1> {Authors.headingOfAuthors}</h1>
             <p>{Authors.subHeadingofAuthors}</p>
-            <div className="row">
-              {Authors.authorsData.map((item) => (
-                <div className="col-md-6 col-lg-6 col-sm-12">
-                  <div>
-                    <img
-                      src={item.img}
-                      alt=""
-                      className="w-75px rounded-circle text-center mb-3 "
-                      width={80}
-                    />
+            <div className="d-flex flex-column justify-content-center align-items-center  mt-2 ">
+              <div className="d-flex justify-content-center align-items-center">
+                {Authors.authorsData.map((item) => (
+                  <div className="d-flex">
+                    <div key={item.id} className="d-flex flex-column">
+                      <img
+                        src={item.img}
+                        alt=""
+                        className="w-75px rounded-circle text-center mb-3"
+                        width={80}
+                      />
+                      <a href="#" className="mt-5 authorUrl">
+                        {item.name}
+                      </a>
+                    </div>
                   </div>
-                  <a href="#" className="mt-5 authorUrl">
-                    {item.name}
-                  </a>
-                </div>
-              ))}
-
-              <div className="col-lg-12 col-md-12 col-sm-12 mt-5 authorsPadding ">
+                ))}
+              </div>
+              <div>
                 <span className="we">WE:</span>
                 <ul className="about-us text-left">
                   {aboutUs.map((item) => (
