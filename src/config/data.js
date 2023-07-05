@@ -1,7 +1,9 @@
 export const BookIntroduction = {
   heading: "Book 1: Builder Book",
-  subHeading:
+  subHeading: [
     "Learn how to build a full-stack, production-ready JavaScript web application from scratch",
+    "Unlike online tutorials, which can be outdated, disjointed, and frustrating to fit together our book gives you a structured up - to - date guide on building a complete web app from start to finish.",
+  ],
 
   previewbtnText: "Preview & buy book for $99",
   whyBookHeading: "Why this book?",
@@ -478,27 +480,27 @@ export const Reviews = [
       "https://d2w0479rccr6dx.cloudfront.net/book-reviews/sam-reaves-picture.jpeg",
     name: "Sam Reaves",
     comment:
-      '"I use Udemy for learning specific technologies but chose Builder Book after being impressed with their website being the actual project you build. The up to date, step by step instructions made creating the app a breeze.',
+      '"I use Udemy for learning specific technologies but chose Builder Book after being impressed with their website being the actual project you build. The up to date, step by step instructions made creating the app a breeze."',
   },
   {
     urlThumbnail:
       "https://d2w0479rccr6dx.cloudfront.net/book-reviews/salie-lie-picture.jpg",
     name: "Salie Lim",
     comment:
-      "Builder Book is by far the best book I have found on the MERN stack. It also covers testing. Very comprehensive book with explanations so that you actually understand what the code does.",
+      '"Builder Book is by far the best book I have found on the MERN stack. It also covers testing. Very comprehensive book with explanations so that you actually understand what the code does."',
   },
   {
     urlThumbnail:
       "https://d2w0479rccr6dx.cloudfront.net/book-reviews/earllee-picture.jpg",
     name: "Earl Lee",
     comment:
-      "As an engineer turned product manager that's a few years removed from writing code, Builder Book has been a quick and convenient way to brush up on full-stack web development and learn React for a side project.",
+      '"As an engineer turned product manager thats a few years removed from writing code, Builder Book has been a quick and convenient way to brush up on full-stack web development and learn React for a side project."',
   },
   {
     urlThumbnail: "https://avatars1.githubusercontent.com/u/29977869?s=460&v=4",
     name: "Rick Hallett",
     comment:
-      "The authors are particularly receptive to open-source issues and pull-requests; this made my experience very worthwhile. Strongly recommend to those going from junior to middleweight JavaScript developers",
+      '"The authors are particularly receptive to open-source issues and pull-requests; this made my experience very worthwhile. Strongly recommend to those going from junior to middleweight JavaScript developers"',
   },
 ];
 export const Authors = {
@@ -515,7 +517,7 @@ export const Authors = {
     },
   ],
   footerData: [
-    "maintain two popular repos - saas and builderbook (combined: close to 6000 stars and 1000 unique visitors per week).",
+    "maintain two popular repos -<a>saas</a>  and builderbook (combined: close to 6000 stars and 1000 unique visitors per week).",
     "built and maintain the most popular React/Typescript/Node boilerplate for starting SaaS business.",
     "built over a dozen SaaS web applications in the last 5 years.",
     "built Async, urgent vs non-urgent team communication tool, and currently run it as a ramen-profitable SaaS business.",

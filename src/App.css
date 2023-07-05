@@ -14,6 +14,7 @@ button {
   font-size: 0.875rem !important;
 }
 .page1,
+.booksData,
 .reviewsPage,
 .cardPadding {
   padding: 10px 8%;
@@ -82,4 +83,15 @@ button {
 }
 .cardWidth {
   padding: 10 8%;
+}
+@media (max-width: 480px) {
+  ul,
+  li {
+    padding: 0px !important;
+    word-wrap: break-word;
+  }
+  .bookHeadingOne,
+  .tblOfContent {
+    font-size: 1.5rem !important;
+  }
 }

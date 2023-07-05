@@ -20,7 +20,9 @@ const Builderbook = () => {
     <div>
       <div className="text-white page1 text-center">
         <div className="heading">
-          <h1 className="mt-4 mb-4">{BookIntroduction.heading}</h1>
+          <h1 className="mt-4 mb-4 bookHeadingOne">
+            {BookIntroduction.heading}
+          </h1>
         </div>
         <div className="row btn-holder m-0 justify-content-around">
           <div className="mb-3">
@@ -33,7 +35,11 @@ const Builderbook = () => {
             </button>
           </div>
         </div>
-        <div className="subheading">{BookIntroduction.subHeading}</div>
+        <div className="subheading">
+          {BookIntroduction.subHeading.map((item) => (
+            <p>{item}</p>
+          ))}
+        </div>
         <button type="button" className="btn btn-success btn-sm btn-text mt-5">
           {BookIntroduction.previewbtnText}
         </button>
@@ -67,7 +73,9 @@ const Builderbook = () => {
           ))}
         </div>
         <div className="text-white text-center mt-5">
-          <h1>{BookIntroduction.tableofcontentHeading}</h1>
+          <h1 className="tblOfContent">
+            {BookIntroduction.tableofcontentHeading}
+          </h1>
           <button
             type="button"
             className="btn btn-success btn-sm btn-text mt-5"
@@ -98,7 +106,9 @@ const Builderbook = () => {
                         ))}
                       </div>
                     ) : (
-                      <li>{item.topic}</li>
+                      <div className="ml-3">
+                        <li>{item.topic}</li>
+                      </div>
                     )
                   )}
                 </div>

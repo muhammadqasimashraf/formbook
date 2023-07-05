@@ -5,17 +5,20 @@
 .navlink,
 .navlink:hover {
   color: #58a6ff;
+  text-decoration: none;
+  font-size: 13px !important;
 }
 .navbar {
   background-color: #424242;
   height: 64px;
-  padding: 0 28px !important;
+  padding-left: 28px !important;
+  padding-right: 25px !important;
 }
 .navbtn {
-  font-size: 14px !important;
+  font-size: 13px !important;
   text-decoration: none;
   background-color: rgba(201, 209, 217, 0.08);
   color: #c9d1d9;
   border: 1px solid rgba(255, 255, 255, 0.23) !important;
-  padding: 5px 15px !important;
+  padding: 7px 14px !important;
 }

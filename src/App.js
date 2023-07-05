@@ -20,7 +20,6 @@ function App() {
             <Route path="/reviews" element={<Reviews />} />
           </Routes>
         </Container>
-        <Footer />
       </Router>
     </div>
   );
