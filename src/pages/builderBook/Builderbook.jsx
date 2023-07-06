@@ -21,7 +21,7 @@ const Builderbook = () => {
           <Card item={item} />
         ))}
       </div>
-      <div className="buttons d-flex justify-content-center align-items-center mt-2 ">
+      <div className="buttons d-flex justify-content-center align-items-center mt-1 ">
         <button className="m-3 text-white btn shadow-none ml-3 navbtn">
           <span>See all Reviews</span>
         </button>
@@ -30,7 +30,7 @@ const Builderbook = () => {
           <span>About Us</span>
         </button>
       </div>
-      <h1 className="text-center text-white mt-3">
+      <h1 className="text-center text-white mt-4">
         {" "}
         {parentArray[0].firstBook.BookIntro.whyBookHeading}
       </h1>

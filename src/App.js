@@ -13,13 +13,13 @@ function App() {
     <div className="App">
       <Router>
         <Navigation />
-        <Container fluid className="mt-3">
-          <Routes>
-            <Route exact path="/" element={<Builderbook />} />
-            <Route path="/saasboilerplate" element={<SaasBiolerPlate />} />
-            <Route path="/reviews" element={<Reviews />} />
-          </Routes>
-        </Container>
+
+        <Routes>
+          <Route exact path="/" element={<Builderbook />} />
+          <Route path="/saasboilerplate" element={<SaasBiolerPlate />} />
+          <Route path="/reviews" element={<Reviews />} />
+        </Routes>
+
         <Footer />
       </Router>
     </div>

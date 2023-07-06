@@ -32,9 +32,9 @@ const Authors = ({ parentArray }) => {
               </div>
             ))}
           </div>
-          <div>
+          <div className="AuthorsPadding">
             <span className="we">WE:</span>
-            <ul className="about-us text-left">
+            <ul className="text-left">
               {parentArray[0].firstBook.aboutUs.map((item) => (
                 <li dangerouslySetInnerHTML={{ __html: item }}></li>
               ))}

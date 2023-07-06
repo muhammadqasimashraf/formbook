@@ -7,9 +7,12 @@ const Chapters = ({ parentArray }) => {
         className="d-flex mt-5 booksData  MuiGrid-container MuiGrid-justify-content-xs-space-around "
         align="flex-start"
       >
-        <div className="  col-xs-12 col-sm-6" style={{ textAlign: "left" }}>
+        <div
+          className="  col-xs-12 col-sm-6 p-0 mb-5"
+          style={{ textAlign: "left" }}
+        >
           {parentArray[0].firstBook.chapters[0].firstfive.map((item) => (
-            <div>
+            <div className="mb-4">
               <ul className="text-white bg-dark rounded p-4 ">
                 <div>
                   <a href="#" className="chapterLink">
@@ -42,9 +45,12 @@ const Chapters = ({ parentArray }) => {
             </div>
           ))}
         </div>
-        <div className="  col-xs-12 col-sm-6" style={{ textAlign: "left" }}>
+        <div
+          className="  col-xs-12 col-sm-6 p-2 mb-5 chaptersMarginBottom"
+          style={{ textAlign: "left" }}
+        >
           {parentArray[0].firstBook.chapters[1].secondfive.map((item) => (
-            <div>
+            <div className="mb-4">
               <ul className="text-white bg-dark rounded p-4 ">
                 <div>
                   <a href="#" className="chapterLink">

@@ -14,6 +14,10 @@
   text-decoration: none;
   color: #58a6ff;
 }
+.navLinkDiv {
+  margin-top: 5px;
+  margin-right: 1px;
+}
 .navlink {
   color: #58a6ff;
   font-size: 14px !important;
@@ -22,7 +26,7 @@
 .navbar {
   background-color: #424242;
   height: 64px;
-  padding-left: 28px !important;
+  padding-left: 43px !important;
   padding-right: 20px !important;
 }
 .navbtn {

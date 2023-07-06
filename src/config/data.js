@@ -5,7 +5,7 @@ export const parentArray = [
         heading: "Book 1: Builder Book",
         subHeading: [
           "Learn how to build a full-stack, production-ready JavaScript web application from scratch",
-          "Unlike online tutorials, which can be outdated, disjointed, and frustrating to fit together, our book gives you a structured, up-to-date guide on building a complete web app from start to finish.",
+          "Unlike online tutorials, which can be outdated, disjointed, and frustrating to fit together,<br/> our book gives you a structured, up-to-date guide on building a complete web app from start to finish.",
         ],
         previewbtnText: "Preview & buy book for $99",
         whyBookHeading: "Why this book?",
@@ -17,15 +17,16 @@ export const parentArray = [
               "Learn how to build a web app with React.js, Next.js, Material-UI, Express.js, Mongoose, and MongoDB. We regularly update the book with the latest versions of all dependencies.",
           },
           {
-            paragraphHeading: "Step-by-step guide",
-            paragraph:
-              "We cover every step of building a web app - writing pages/components, creating a server, connecting a database, integrating internal and external API infrastructures, and more. You could spend days or weeks searching these topics on Google. The web app you build in this book can be used to sell your own paywalled content and as a portfolio item.",
-          },
-          {
             paragraphHeading: "Popular third-party APIs",
             paragraph:
               "Learn how to integrate a web app with Google for user authentication, GitHub for markdown and collaboration, AWS SES for transactional emails, MailChimp for newsletters, and Stripe for selling.",
           },
+          {
+            paragraphHeading: "Build a complete web application",
+            paragraph:
+              "We cover every step of building a web app - writing pages/components, creating a server, connecting a database, integrating internal and external API infrastructures, and more. You could spend days or weeks searching these topics on Google. The web app you build in this book can be used to sell your own paywalled content and as a portfolio item.",
+          },
+
           {
             paragraphHeading: "Public support",
             paragraph:
@@ -495,10 +496,11 @@ export const parentArray = [
         ],
       },
       aboutUs: [
-        "   maintain two popular repos - <a href='www.google.com'>saas</a> and builderbook (combined:over 6000 stars and 1000 unique visitors per week).",
-        " built Async, open source team communcation web app to separate urgent vs non-urgent conversations.",
-        "   built Work in biotech, growing niche job board for small biotech startups.",
-        "  built over a dozen SaaS web applications in the last 5 years and offer custom development service: async-labs.com",
+        "   maintain two popular repos - <a href='www.google.com'>saas</a> and <a href='www.google.com'>builderbook</a> (combined:over 6000 stars and 1000 unique visitors per week).",
+        "built and maintain the most popular React/Typescript/Node <a href='www.google.com'>boilerplate</a>  for starting a SaaS business.",
+        " built<a href='www.google.com'>Async</a> , open source team communcation web app to separate urgent vs non-urgent conversations.",
+        "   built Work in <a href='www.google.com'>biotech</a> , growing niche job board for small biotech startups.",
+        "  built over a dozen SaaS web applications in the last 5 years and offer custom development service: <a href='www.google.com'> async-labs.com</a>",
       ],
     },
   },
