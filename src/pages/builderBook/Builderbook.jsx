@@ -84,9 +84,45 @@ const Builderbook = () => {
           </button>
         </div>
 
-        <div className="row mt-5 booksData ">
-          {chapters.map((item) => (
-            <div className=" col-lg-6 col-md-12 col-sm-12">
+        <div
+          className="d-flex mt-5 booksData  MuiGrid-container MuiGrid-justify-content-xs-space-around "
+          align="flex-start"
+        >
+          {chapters[0].firstfive.map((item) => (
+            <div className="  col-xs-12 col-sm-6" style={{ textAlign: "left" }}>
+              <ul className="text-white bg-dark rounded p-4 ">
+                <div>
+                  <a href="#" className="chapterLink">
+                    {" "}
+                    <div style={{ marginLeft: "-15px" }}>
+                      {" "}
+                      {item.chapterName}
+                    </div>
+                  </a>
+
+                  {item.topics.map((item) =>
+                    item.isList ? (
+                      <div className="ml-4">
+                        <li> {item.topic}</li>
+
+                        {item.subTopics.map((item) => (
+                          <ul>
+                            <li>{item}</li>
+                          </ul>
+                        ))}
+                      </div>
+                    ) : (
+                      <div className="ml-4">
+                        <li>{item.topic}</li>
+                      </div>
+                    )
+                  )}
+                </div>
+              </ul>
+            </div>
+          ))}
+          {chapters[1].secondfive.map((item) => (
+            <div className="  col-xs-12 col-sm-6" style={{ textAlign: "left" }}>
               <ul className="text-white bg-dark rounded p-4 ">
                 <div>
                   <a href="#" className="chapterLink">
@@ -126,16 +162,24 @@ const Builderbook = () => {
               <div className="d-flex justify-content-center align-items-center">
                 {Authors.authorsData.map((item) => (
                   <div className="d-flex">
-                    <div key={item.id} className="d-flex flex-column">
-                      <img
-                        src={item.img}
-                        alt=""
-                        className="w-75px rounded-circle text-center mb-3"
-                        width={80}
-                      />
-                      <a href="#" className="mt-5 authorUrl">
-                        {item.name}
-                      </a>
+                    <div
+                      key={item.id}
+                      className="d-flex flex-column mr-5 ml-5 mt-5 mb-5"
+                    >
+                      <div>
+                        <img
+                          src={item.img}
+                          alt=""
+                          className="w-75px rounded-circle text-center mb-3"
+                          width={80}
+                        />
+                      </div>
+                      <div>
+                        {" "}
+                        <a href="#" className="mt-5 authorUrl">
+                          {item.name}
+                        </a>
+                      </div>
                     </div>
                   </div>
                 ))}

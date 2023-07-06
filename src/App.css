@@ -71,6 +71,17 @@ button {
 .authorsPadding {
   padding-bottom: 80px;
 }
+
+.MuiGrid-justify-content-xs-space-around {
+  justify-content: space-around;
+}
+.MuiGrid-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
 .footerRow {
   background-color: #424242;
   height: 64px;
@@ -84,7 +95,14 @@ button {
 .cardWidth {
   padding: 10 8%;
 }
-@media (max-width: 480px) {
+@media (max-width: 828px) {
+  ul,
+  li {
+    padding: 0px !important;
+    word-wrap: break-word;
+  }
+}
+@media (max-width: 768px) {
   ul,
   li {
     padding: 0px !important;

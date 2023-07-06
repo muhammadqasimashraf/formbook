@@ -13,7 +13,7 @@ import "./Navigation.css";
 function Navigation() {
   return (
     <Navbar expand="lg" className="navbar">
-      <Container fluid>
+      <Container fluid w-100>
         <Navbar.Brand as={Link} to="/">
           <img className="navbar-brand" src={logo} alt="logo" width={40} />
         </Navbar.Brand>
