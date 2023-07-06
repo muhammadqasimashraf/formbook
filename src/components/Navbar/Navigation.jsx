@@ -13,15 +13,15 @@ import "./Navigation.css";
 function Navigation() {
   return (
     <Navbar expand="lg" className="navbar">
-      <Container fluid w-100>
+      <Container fluid>
         <Navbar.Brand as={Link} to="/">
           <img className="navbar-brand" src={logo} alt="logo" width={40} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
-          <Nav className="ml-auto">
-            <Nav.Link as={NavLink} to="/" exact className="nav-link">
-              <div className="navLinkDiv mt-1 ml-3">
+          <Nav className="ml-auto mr-2">
+            <Nav.Link as={NavLink} to="/" exact className="nav-link mr-3">
+              <div className="navLinkDiv mt-1">
                 <a href="#" className="navlink mb-2">
                   Book 1: Builder Book
                 </a>
@@ -31,9 +31,9 @@ function Navigation() {
               as={NavLink}
               to="/saasboilerplate"
               activeClassName="active"
-              className="nav-link"
+              className="nav-link mr-3"
             >
-              <div className="navLinkDiv mt-1 ml-3">
+              <div className="navLinkDiv mt-1 ">
                 <a href="#" className="navlink mb-2">
                   Book 2: SaaS Boilerplate
                 </a>
@@ -43,18 +43,18 @@ function Navigation() {
               as={NavLink}
               to="/reviews"
               activeClassName="active"
-              className="nav-link"
+              className="nav-link mr-3 "
             >
-              <div className="navLinkDiv mt-1 ml-3">
+              <div className="navLinkDiv mt-1 ">
                 <a href="#" className="navlink mb-2">
                   Reviews
                 </a>
               </div>
             </Nav.Link>
-            <Nav.Link as={Link} to="/reviews">
+            <Nav.Link as={Link} to="/reviews" className="ml-4">
               <button
                 type="button"
-                className="navlink  text-white btn shadow-none ml-3 navbtn"
+                className="navlink  text-white btn shadow-none  navbtn"
               >
                 <span>Log in</span>
               </button>

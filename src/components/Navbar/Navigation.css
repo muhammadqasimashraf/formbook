@@ -3,7 +3,12 @@
   display: block;
   height: 1px;
   background-color: #58a6ff;
+  margin-top: -2px;
+  text-underline-position: under;
+}
+.nav-link {
   margin-top: 2px;
+  font-family: Plex Mono, monospace;
 }
 .navlink:hover {
   text-decoration: none;
@@ -11,13 +16,14 @@
 }
 .navlink {
   color: #58a6ff;
-  font-size: 13px !important;
+  font-size: 14px !important;
+  position: relative;
 }
 .navbar {
   background-color: #424242;
   height: 64px;
   padding-left: 28px !important;
-  padding-right: 25px !important;
+  padding-right: 20px !important;
 }
 .navbtn {
   font-size: 13px !important;

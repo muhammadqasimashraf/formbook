@@ -2,12 +2,12 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="container-fluid">
-      <div className="row d-flex footerRow justify-content-center align-items-center ">
-        <div className="col-lg-6 col-md-6 align-self-center">
-          <p>© 2018 - 2023 Builder Book Terms</p>
+    <div className="container-fluid w-100">
+      <div className="row d-flex footerRow justify-content-around align-items-center text-white ">
+        <div>
+          <p className="m-0">© 2018 - 2023 Builder Book Terms</p>
         </div>
-        <div className="col-lg-6 col-md-6">
+        <div>
           <a href="#">Terms</a>
         </div>
       </div>
