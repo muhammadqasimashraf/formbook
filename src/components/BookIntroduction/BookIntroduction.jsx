@@ -19,14 +19,14 @@ const BookIntroduction = ({ parentArray }) => {
           <div className="mb-3 mr-2">
             <button
               type="button"
-              className=" btn-light mr-1 font-weight-bold btnPadding     IntroBtnText "
+              className=" btn-light mr-1 font-weight-bold btnPadding shadow-none    IntroBtnText "
             >
               <AiFillGithub style={{ width: "30px", height: "22px" }} />
               <span className="fw-bold">Star</span>
             </button>
             <button
               type="button"
-              className=" btn-light font-weight-bold    IntroBtnText "
+              className=" btn-light font-weight-bold  shadow-none  IntroBtnText "
             >
               <span className="fw-bold">3,552</span>
             </button>
