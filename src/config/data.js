@@ -508,24 +508,78 @@ export const parentArray = [
 
 export const ReviewsPage = [
   {
-    urlThumbnail:
-      "	https://d2w0479rccr6dx.cloudfront.net/book-reviews/paulparks-picture.jpeg",
-    name: "Paul Parks",
-    review:
-      "I am primarily a backend engineer who has not been exposed to too much front end or web development. Builderbook has been a great resource that has allowed me to learn several frameworks and design patterns with ease.",
-  },
-  {
-    urlThumbnail:
-      "	https://d2w0479rccr6dx.cloudfront.net/book-reviews/patrickcaughey-picture.jpeg",
-    name: "Patrick Caughey",
-    review:
-      "The SaaS Boilerplate book has been super helpful. The first few chapters got me up and running very quickly, and as I re-read them I continued to learn more about the 'why' behind the decisions you made. It's been fun and quite informative!",
-  },
-  {
-    urlThumbnail:
-      "		https://d2w0479rccr6dx.cloudfront.net/book-reviews/aleksandrs-savkins-picture.jpeg",
-    name: "Aleksandrs Savkins",
-    review:
-      "The book is exactly what I The book is exactly what I was looking foThe book is exactly what I was looking fowas looking forThe book is exactly what I was looking foThe book is exactly what I was looking foThe book is exactly what I was looking fo - I needed some guide that will cover the entire processes of creating web apps and saas. I didn't want to waste time and go through many guides, the book is a huge time saver!",
+    firstDiv: [
+      {
+        urlThumbnail:
+          "	https://d2w0479rccr6dx.cloudfront.net/book-reviews/paulparks-picture.jpeg",
+        name: "Paul Parks",
+        review:
+          "I am primarily a backend engineer who has not been exposed to too much front end or web development. Builderbook has been a great resource that has allowed me to learn several frameworks and design patterns with ease.",
+      },
+      {
+        urlThumbnail:
+          "	https://d2w0479rccr6dx.cloudfront.net/book-reviews/patrickcaughey-picture.jpeg",
+        name: "Patrick Caughey",
+        review:
+          "The SaaS Boilerplate book has been super helpful. The first few chapters got me up and running very quickly, and as I re-read them I continued to learn more about the 'why' behind the decisions you made. It's been fun and quite informative!",
+      },
+      {
+        urlThumbnail:
+          "		https://d2w0479rccr6dx.cloudfront.net/book-reviews/aleksandrs-savkins-picture.jpeg",
+        name: "Aleksandrs Savkins",
+        review:
+          "The book is exactly what I The book is exactly what I was looking foThe book is exactly what I was looking fowas looking forThe book is exactly what I was looking foThe book is exactly what I was looking foThe book is exactly what I was looking fo - I needed some guide that will cover the entire processes of creating web apps and saas. I didn't want to waste time and go through many guides, the book is a huge time saver!",
+      },
+    ],
+    secondDiv: [
+      {
+        urlThumbnail:
+          "	https://d2w0479rccr6dx.cloudfront.net/book-reviews/jia-wang-picture.jpg",
+        name: "Jia Wang",
+        country: "Massachusetts, USA",
+        review:
+          "I want to thank you all for your effort to build up this fantastic project. It is really awesome for full-stack beginners! As one of them, I am using this project to build my own thing, during the implementation I learned a lot, and I might have gave up if I did not choose to purchase BUILDER BOOK! Deeply appreciate that!",
+      },
+      {
+        urlThumbnail:
+          "https://d2w0479rccr6dx.cloudfront.net/book-reviews/igor-andreienko-picture.jpg",
+        name: "Igor Andreienko",
+        country: "Ukarine",
+        review:
+          "I decided to study the first book and then move on to the next one. The book is really well written, which makes it a joy to study. Thank you.",
+      },
+      {
+        urlThumbnail:
+          "		https://d2w0479rccr6dx.cloudfront.net/book-reviews/fahad-riaz-picture.jpeg",
+        name: "Fahad Riaz",
+        review:
+          "I'm a backend developer and I was looking for something that brought me up to speed on how to deploy a production ready website. This was the first thing I found that fit the bill and seemed comprehensive enough.",
+      },
+    ],
+    thirdDiv: [
+      {
+        urlThumbnail:
+          "	https://d2w0479rccr6dx.cloudfront.net/book-reviews/jia-wang-picture.jpg",
+        name: "Jia Wang",
+        country: "Massachusetts, USA",
+        review:
+          "I want to thank you all for your effort to build up this fantastic project. It is really awesome for full-stack beginners! As one of them, I am using this project to build my own thing, during the implementation I learned a lot, and I might have gave up if I did not choose to purchase BUILDER BOOK! Deeply appreciate that!",
+      },
+      {
+        urlThumbnail:
+          "https://d2w0479rccr6dx.cloudfront.net/book-reviews/igor-andreienko-picture.jpg",
+        name: "Igor Andreienko",
+        country: "Ukarine",
+        review:
+          "I decided to study the first book and then move on to the next one. The book is really well written, which makes it a joy to study. Thank you.",
+      },
+      {
+        urlThumbnail:
+          "		https://d2w0479rccr6dx.cloudfront.net/book-reviews/fahad-riaz-picture.jpeg",
+        name: "Fahad Riaz",
+        review:
+          "I'm a backend developer and I was looking for something that brought me up to speed on how to deploy a production ready website. This was the first thing I found that fit the bill and seemed comprehensive enough.",
+      },
+    ],
   },
 ];
