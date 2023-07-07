@@ -1,3 +1,4 @@
+import { Height } from "@mui/icons-material";
 import React from "react";
 import {
   AiFillCaretDown,
@@ -7,25 +8,25 @@ import {
 
 const BookIntroduction = ({ parentArray }) => {
   return (
-    <div className="mt-4">
+    <div className="BookIntroMargin">
       <div className="text-center introductionSection">
         <div className="heading">
-          <h1 className="mt-4 mb-4 bookHeadingOne">
+          <h1 className=" mb-4 bookHeadingOne">
             {parentArray[0].firstBook.BookIntro.heading}
           </h1>
         </div>
-        <div className="row btn-holder m-0 justify-content-around">
-          <div className="mb-3">
+        <div className="row btn-holder m-0 justify-content-around mr-2 mt-1">
+          <div className="mb-3 mr-2">
             <button
               type="button"
-              className="btn btn-light mr-2 font-weight-bold btnPadding p-1 px-3 py-0 "
+              className=" btn-light mr-1 font-weight-bold btnPadding     IntroBtnText "
             >
-              <AiFillGithub />
+              <AiFillGithub style={{ width: "30px", height: "22px" }} />
               <span className="fw-bold">Star</span>
             </button>
             <button
               type="button"
-              className="btn btn-light font-weight-bold btnPadding p-1 px-2 py-0 "
+              className=" btn-light font-weight-bold    IntroBtnText "
             >
               <span className="fw-bold">3,552</span>
             </button>
@@ -38,7 +39,7 @@ const BookIntroduction = ({ parentArray }) => {
         </div>
         <button
           type="button"
-          className="btn btn-success btn-sm btn-text mt-4 font-weight-normal previewBtn"
+          className="btn btn-sm btn-text mt-4 font-weight-normal text-white shadow-none previewBtn"
         >
           {parentArray[0].firstBook.BookIntro.previewbtnText}
         </button>

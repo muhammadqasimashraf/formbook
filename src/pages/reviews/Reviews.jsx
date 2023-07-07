@@ -1,6 +1,8 @@
 import React from "react";
 import { ReviewsPage } from "../../config/data";
 import ReviewsPageCard from "../../components/ReviewsPageCard/ReviewsPageCard";
+import Card from "../../components/Card/Card";
+import { parentArray } from "../../config/data";
 const Reviews = () => {
   return (
     <div className="reviewsPage">
@@ -24,8 +26,8 @@ const Reviews = () => {
         </p>
       </div>
       <div className="row mx-0 mt-5 cardContainer">
-        {ReviewsPage.map((item) => (
-          <ReviewsPageCard item={item} />
+        {parentArray[0].firstBook.Reviews.ReviewPage.map((item) => (
+          <Card item={item} />
         ))}
       </div>
     </div>

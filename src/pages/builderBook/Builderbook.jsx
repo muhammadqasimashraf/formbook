@@ -16,8 +16,8 @@ const Builderbook = () => {
   return (
     <div className="page1">
       <BookIntroduction parentArray={parentArray} />
-      <div className="row mx-0 mt-5 ">
-        {parentArray[0].firstBook.Reviews.map((item) => (
+      <div className="row mx-0 mt-4 ">
+        {parentArray[0].firstBook.Reviews.BookPage.map((item) => (
           <Card item={item} />
         ))}
       </div>

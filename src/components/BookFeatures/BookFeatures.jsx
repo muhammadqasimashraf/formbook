@@ -7,7 +7,9 @@ const BookFeatures = ({ parentArray }) => {
         {parentArray[0].firstBook.BookIntro.features.map((item, index) => (
           <div key={index} className="text-white col-lg-6  featurePading mb-3 ">
             <p>{item.paragraphHeading}</p>
-            <p className="featureDiv">{item.paragraph}</p>
+            <p className="featureDiv">
+              <p dangerouslySetInnerHTML={{ __html: item.paragraph }}></p>
+            </p>
           </div>
         ))}
       </div>

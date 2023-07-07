@@ -17,9 +17,9 @@ function Navigation() {
         <img className="navbar-brand" src={logo} alt="logo" width={40} />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="navbar-nav" />
-      <Navbar.Collapse id="navbar-nav">
-        <Nav className="ml-auto mr-2 ">
-          <Nav.Link as={NavLink} to="/" exact className="nav-link mr-3">
+      <Navbar.Collapse id="navbar-nav ">
+        <Nav className="navMargin">
+          <Nav.Link as={NavLink} to="/" exact className="nav-link  ">
             <div className="navLinkDiv ">
               <a href="#" className="navlink mb-2">
                 Book 1: Builder Book
@@ -30,7 +30,7 @@ function Navigation() {
             as={NavLink}
             to="/saasboilerplate"
             activeClassName="active"
-            className="nav-link mr-3"
+            className="nav-link  "
           >
             <div className="navLinkDiv ">
               <a href="#" className="navlink mb-2">
@@ -42,7 +42,7 @@ function Navigation() {
             as={NavLink}
             to="/reviews"
             activeClassName="active"
-            className="nav-link mr-3 "
+            className="nav-link  "
           >
             <div className="navLinkDiv ">
               <a href="#" className="navlink mb-2">
@@ -51,10 +51,7 @@ function Navigation() {
             </div>
           </Nav.Link>
           <Nav.Link as={Link} to="/reviews" className="ml-4">
-            <button
-              type="button"
-              className="navlink  text-white btn shadow-none  navbtn"
-            >
+            <button type="button" className="navlink   btn shadow-none  navbtn">
               <span>Log in</span>
             </button>
           </Nav.Link>

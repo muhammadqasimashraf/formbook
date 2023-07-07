@@ -46,7 +46,7 @@ const Chapters = ({ parentArray }) => {
           ))}
         </div>
         <div
-          className="  col-xs-12 col-sm-6 p-2 mb-5 chaptersMarginBottom"
+          className="  col-xs-12 col-sm-6   chaptersMarginleft "
           style={{ textAlign: "left" }}
         >
           {parentArray[0].firstBook.chapters[1].secondfive.map((item) => (

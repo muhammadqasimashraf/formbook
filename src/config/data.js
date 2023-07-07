@@ -30,7 +30,7 @@ export const parentArray = [
           {
             paragraphHeading: "Public support",
             paragraph:
-              "If you have questions, search our closed GitHub issues or create a new one. We are happy to answer beginner to expert-level questions. With the help of our readers, we've made many improvements to our book. If you purchased our book, we typically reply within 1 or 2 days.",
+              "If you have questions, search our closed<a href='www.google.com'>GitHub issues</a>  or create a new one. We are happy to answer beginner to expert-level questions. With the help of our readers, we've made many improvements to our book. If you purchased our book, we typically reply within 1 or 2 days.",
           },
         ],
       },
@@ -451,36 +451,115 @@ export const parentArray = [
           ],
         },
       ],
-      Reviews: [
-        {
-          urlThumbnail:
-            "https://d2w0479rccr6dx.cloudfront.net/book-reviews/sam-reaves-picture.jpeg",
-          name: "Sam Reaves",
-          comment:
-            "I use Udemy for learning specific technologies but chose Builder Book after being impressed with their website being the actual project you build. The up to date, step by step instructions made creating the app a breeze.",
-        },
-        {
-          urlThumbnail:
-            "https://d2w0479rccr6dx.cloudfront.net/book-reviews/salie-lie-picture.jpg",
-          name: "Salie Lim",
-          comment:
-            '"Builder Book is by far the best book I have found on the MERN stack. It also covers testing. Very comprehensive book with explanations so that you actually understand what the code does."',
-        },
-        {
-          urlThumbnail:
-            "https://d2w0479rccr6dx.cloudfront.net/book-reviews/earllee-picture.jpg",
-          name: "Earl Lee",
-          comment:
-            '"As an engineer turned product manager thats a few years removed from writing code, Builder Book has been a quick and convenient way to brush up on full-stack web development and learn React for a side project."',
-        },
-        {
-          urlThumbnail:
-            "https://avatars1.githubusercontent.com/u/29977869?s=460&v=4",
-          name: "Rick Hallett",
-          comment:
-            '"The authors are particularly receptive to open-source issues and pull-requests; this made my experience very worthwhile. Strongly recommend to those going from junior to middleweight JavaScript developers"',
-        },
-      ],
+      Reviews: {
+        BookPage: [
+          {
+            urlThumbnail:
+              "https://d2w0479rccr6dx.cloudfront.net/book-reviews/sam-reaves-picture.jpeg",
+            name: "Sam Reaves",
+            comment:
+              "I use Udemy for learning specific technologies but chose Builder Book after being impressed with their website being the actual project you build. The up to date, step by step instructions made creating the app a breeze.",
+          },
+          {
+            urlThumbnail:
+              "https://d2w0479rccr6dx.cloudfront.net/book-reviews/salie-lie-picture.jpg",
+            name: "Salie Lim",
+            comment:
+              '"Builder Book is by far the best book I have found on the MERN stack. It also covers testing. Very comprehensive book with explanations so that you actually understand what the code does."',
+          },
+          {
+            urlThumbnail:
+              "https://d2w0479rccr6dx.cloudfront.net/book-reviews/earllee-picture.jpg",
+            name: "Earl Lee",
+            comment:
+              '"As an engineer turned product manager thats a few years removed from writing code, Builder Book has been a quick and convenient way to brush up on full-stack web development and learn React for a side project."',
+          },
+          {
+            urlThumbnail:
+              "https://avatars1.githubusercontent.com/u/29977869?s=460&v=4",
+            name: "Rick Hallett",
+            comment:
+              '"The authors are particularly receptive to open-source issues and pull-requests; this made my experience very worthwhile. Strongly recommend to those going from junior to middleweight JavaScript developers"',
+          },
+        ],
+        ReviewPage: [
+          {
+            firstDiv: [
+              {
+                urlThumbnail:
+                  "	https://d2w0479rccr6dx.cloudfront.net/book-reviews/paulparks-picture.jpeg",
+                name: "Paul Parks",
+                review:
+                  "I am primarily a backend engineer who has not been exposed to too much front end or web development. Builderbook has been a great resource that has allowed me to learn several frameworks and design patterns with ease.",
+              },
+              {
+                urlThumbnail:
+                  "	https://d2w0479rccr6dx.cloudfront.net/book-reviews/patrickcaughey-picture.jpeg",
+                name: "Patrick Caughey",
+                review:
+                  "The SaaS Boilerplate book has been super helpful. The first few chapters got me up and running very quickly, and as I re-read them I continued to learn more about the 'why' behind the decisions you made. It's been fun and quite informative!",
+              },
+              {
+                urlThumbnail:
+                  "		https://d2w0479rccr6dx.cloudfront.net/book-reviews/aleksandrs-savkins-picture.jpeg",
+                name: "Aleksandrs Savkins",
+                review:
+                  "The book is exactly what I The book is exactly what I was looking foThe book is exactly what I was looking fowas looking forThe book is exactly what I was looking foThe book is exactly what I was looking foThe book is exactly what I was looking fo - I needed some guide that will cover the entire processes of creating web apps and saas. I didn't want to waste time and go through many guides, the book is a huge time saver!",
+              },
+            ],
+            secondDiv: [
+              {
+                urlThumbnail:
+                  "	https://d2w0479rccr6dx.cloudfront.net/book-reviews/jia-wang-picture.jpg",
+                name: "Jia Wang",
+                country: "Massachusetts, USA",
+                review:
+                  "I want to thank you all for your effort to build up this fantastic project. It is really awesome for full-stack beginners! As one of them, I am using this project to build my own thing, during the implementation I learned a lot, and I might have gave up if I did not choose to purchase BUILDER BOOK! Deeply appreciate that!",
+              },
+              {
+                urlThumbnail:
+                  "https://d2w0479rccr6dx.cloudfront.net/book-reviews/igor-andreienko-picture.jpg",
+                name: "Igor Andreienko",
+                country: "Ukarine",
+                review:
+                  "I decided to study the first book and then move on to the next one. The book is really well written, which makes it a joy to study. Thank you.",
+              },
+              {
+                urlThumbnail:
+                  "		https://d2w0479rccr6dx.cloudfront.net/book-reviews/fahad-riaz-picture.jpeg",
+                name: "Fahad Riaz",
+                review:
+                  "I'm a backend developer and I was looking for something that brought me up to speed on how to deploy a production ready website. This was the first thing I found that fit the bill and seemed comprehensive enough.",
+              },
+            ],
+            thirdDiv: [
+              {
+                urlThumbnail:
+                  "	https://d2w0479rccr6dx.cloudfront.net/book-reviews/jia-wang-picture.jpg",
+                name: "Jia Wang",
+                country: "Massachusetts, USA",
+                review:
+                  "I want to thank you all for your effort to build up this fantastic project. It is really awesome for full-stack beginners! As one of them, I am using this project to build my own thing, during the implementation I learned a lot, and I might have gave up if I did not choose to purchase BUILDER BOOK! Deeply appreciate that!",
+              },
+              {
+                urlThumbnail:
+                  "https://d2w0479rccr6dx.cloudfront.net/book-reviews/igor-andreienko-picture.jpg",
+                name: "Igor Andreienko",
+                country: "Ukarine",
+                review:
+                  "I decided to study the first book and then move on to the next one. The book is really well written, which makes it a joy to study. Thank you.",
+              },
+              {
+                urlThumbnail:
+                  "		https://d2w0479rccr6dx.cloudfront.net/book-reviews/fahad-riaz-picture.jpeg",
+                name: "Fahad Riaz",
+                review:
+                  "I'm a backend developer and I was looking for something that brought me up to speed on how to deploy a production ready website. This was the first thing I found that fit the bill and seemed comprehensive enough.",
+              },
+            ],
+          },
+        ],
+      },
       Authors: {
         headingOfFooter: "Authors",
         subHeadingofFooter: "Full stack team",
@@ -503,83 +582,5 @@ export const parentArray = [
         "  built over a dozen SaaS web applications in the last 5 years and offer custom development service: <a href='www.google.com'> async-labs.com</a>",
       ],
     },
-  },
-];
-
-export const ReviewsPage = [
-  {
-    firstDiv: [
-      {
-        urlThumbnail:
-          "	https://d2w0479rccr6dx.cloudfront.net/book-reviews/paulparks-picture.jpeg",
-        name: "Paul Parks",
-        review:
-          "I am primarily a backend engineer who has not been exposed to too much front end or web development. Builderbook has been a great resource that has allowed me to learn several frameworks and design patterns with ease.",
-      },
-      {
-        urlThumbnail:
-          "	https://d2w0479rccr6dx.cloudfront.net/book-reviews/patrickcaughey-picture.jpeg",
-        name: "Patrick Caughey",
-        review:
-          "The SaaS Boilerplate book has been super helpful. The first few chapters got me up and running very quickly, and as I re-read them I continued to learn more about the 'why' behind the decisions you made. It's been fun and quite informative!",
-      },
-      {
-        urlThumbnail:
-          "		https://d2w0479rccr6dx.cloudfront.net/book-reviews/aleksandrs-savkins-picture.jpeg",
-        name: "Aleksandrs Savkins",
-        review:
-          "The book is exactly what I The book is exactly what I was looking foThe book is exactly what I was looking fowas looking forThe book is exactly what I was looking foThe book is exactly what I was looking foThe book is exactly what I was looking fo - I needed some guide that will cover the entire processes of creating web apps and saas. I didn't want to waste time and go through many guides, the book is a huge time saver!",
-      },
-    ],
-    secondDiv: [
-      {
-        urlThumbnail:
-          "	https://d2w0479rccr6dx.cloudfront.net/book-reviews/jia-wang-picture.jpg",
-        name: "Jia Wang",
-        country: "Massachusetts, USA",
-        review:
-          "I want to thank you all for your effort to build up this fantastic project. It is really awesome for full-stack beginners! As one of them, I am using this project to build my own thing, during the implementation I learned a lot, and I might have gave up if I did not choose to purchase BUILDER BOOK! Deeply appreciate that!",
-      },
-      {
-        urlThumbnail:
-          "https://d2w0479rccr6dx.cloudfront.net/book-reviews/igor-andreienko-picture.jpg",
-        name: "Igor Andreienko",
-        country: "Ukarine",
-        review:
-          "I decided to study the first book and then move on to the next one. The book is really well written, which makes it a joy to study. Thank you.",
-      },
-      {
-        urlThumbnail:
-          "		https://d2w0479rccr6dx.cloudfront.net/book-reviews/fahad-riaz-picture.jpeg",
-        name: "Fahad Riaz",
-        review:
-          "I'm a backend developer and I was looking for something that brought me up to speed on how to deploy a production ready website. This was the first thing I found that fit the bill and seemed comprehensive enough.",
-      },
-    ],
-    thirdDiv: [
-      {
-        urlThumbnail:
-          "	https://d2w0479rccr6dx.cloudfront.net/book-reviews/jia-wang-picture.jpg",
-        name: "Jia Wang",
-        country: "Massachusetts, USA",
-        review:
-          "I want to thank you all for your effort to build up this fantastic project. It is really awesome for full-stack beginners! As one of them, I am using this project to build my own thing, during the implementation I learned a lot, and I might have gave up if I did not choose to purchase BUILDER BOOK! Deeply appreciate that!",
-      },
-      {
-        urlThumbnail:
-          "https://d2w0479rccr6dx.cloudfront.net/book-reviews/igor-andreienko-picture.jpg",
-        name: "Igor Andreienko",
-        country: "Ukarine",
-        review:
-          "I decided to study the first book and then move on to the next one. The book is really well written, which makes it a joy to study. Thank you.",
-      },
-      {
-        urlThumbnail:
-          "		https://d2w0479rccr6dx.cloudfront.net/book-reviews/fahad-riaz-picture.jpeg",
-        name: "Fahad Riaz",
-        review:
-          "I'm a backend developer and I was looking for something that brought me up to speed on how to deploy a production ready website. This was the first thing I found that fit the bill and seemed comprehensive enough.",
-      },
-    ],
   },
 ];
