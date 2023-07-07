@@ -50,8 +50,9 @@ button {
 .we {
   margin-right: 55%;
 }
-.reviewColor {
-  background-color: #424242;
+.reviewColor,
+.chapterBackground {
+  background-color: #424242 !important;
 }
 .authorUrl,
 .chapterLink,

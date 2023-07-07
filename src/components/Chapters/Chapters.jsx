@@ -13,11 +13,11 @@ const Chapters = ({ parentArray }) => {
         >
           {parentArray[0].firstBook.chapters[0].firstfive.map((item) => (
             <div className="mb-4">
-              <ul className="text-white bg-dark rounded p-4 ">
+              <ul className="text-white chapterBackground rounded p-4 ">
                 <div>
                   <a href="#" className="chapterLink">
                     {" "}
-                    <div style={{ marginLeft: "-15px" }}>
+                    <div style={{ marginLeft: "-15px" }} className="mb-4">
                       {" "}
                       {item.chapterName}
                     </div>
@@ -25,18 +25,18 @@ const Chapters = ({ parentArray }) => {
 
                   {item.topics.map((item) =>
                     item.isList ? (
-                      <div className="ml-4">
+                      <div className="ml-4 mt-1">
                         <li> {item.topic}</li>
 
                         {item.subTopics.map((item) => (
                           <ul>
-                            <li>{item}</li>
+                            <li className="mt-1">{item}</li>
                           </ul>
                         ))}
                       </div>
                     ) : (
-                      <div className="ml-4">
-                        <li>{item.topic}</li>
+                      <div className="ml-4 mt-1">
+                        <li className="mt-1">{item.topic}</li>
                       </div>
                     )
                   )}
@@ -51,11 +51,11 @@ const Chapters = ({ parentArray }) => {
         >
           {parentArray[0].firstBook.chapters[1].secondfive.map((item) => (
             <div className="mb-4">
-              <ul className="text-white bg-dark rounded p-4 ">
+              <ul className="text-white chapterBackground rounded p-4 ">
                 <div>
                   <a href="#" className="chapterLink">
                     {" "}
-                    <div style={{ marginLeft: "-15px" }}>
+                    <div style={{ marginLeft: "-15px" }} className="mb-4">
                       {" "}
                       {item.chapterName}
                     </div>
@@ -63,18 +63,18 @@ const Chapters = ({ parentArray }) => {
 
                   {item.topics.map((item) =>
                     item.isList ? (
-                      <div className="ml-4">
+                      <div className="ml-4 mt-1">
                         <li> {item.topic}</li>
 
                         {item.subTopics.map((item) => (
                           <ul>
-                            <li>{item}</li>
+                            <li className="mt-1">{item}</li>
                           </ul>
                         ))}
                       </div>
                     ) : (
-                      <div className="ml-4">
-                        <li>{item.topic}</li>
+                      <div className="ml-4 mt-1">
+                        <li className="mt-1">{item.topic}</li>
                       </div>
                     )
                   )}
