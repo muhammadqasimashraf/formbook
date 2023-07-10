@@ -1,18 +1,22 @@
 import React from "react";
 
-const Authors = ({ parentArray }) => {
+const Authors = ({ item }) => {
   return (
     <div>
-      <div className="text-center text-white mt-5 align-items-center d-flex justify-content-center align-items-center m-auto">
-        <h1> {parentArray[0].firstBook.Authors.headingOfAuthors}</h1>
-        <p>{parentArray[0].firstBook.Authors.subHeadingofAuthors}</p>
-        <div className="d-flex flex-column justify-content-center align-items-center  mt-2 ">
-          <div className="d-flex justify-content-center align-items-center">
-            {parentArray[0].firstBook.Authors.authorsData.map((item) => (
-              <div className="d-flex">
+      <div className="text-center  athorsTopMargin align-items-center d-flex flex-column justify-content-center align-items-center ">
+        <div>
+          {" "}
+          <h1> {item.headingOfAuthors}</h1>
+          <p>{item.subHeadingofAuthors}</p>
+        </div>
+
+        <div className="d-flex flex-column justify-content-around align-items-center  ">
+          <div className="d-flex justify-content-around align-items-center authorsWidth ">
+            {item.authorsData.map((item) => (
+              <div className="d-flex authorsMarginRight ">
                 <div
                   key={item.id}
-                  className="d-flex flex-column mr-5 ml-5 mt-5 mb-5"
+                  className="d-flex flex-column mr-5 ml-5 mt-5 mb-5 "
                 >
                   <div>
                     <img
@@ -31,14 +35,6 @@ const Authors = ({ parentArray }) => {
                 </div>
               </div>
             ))}
-          </div>
-          <div className="AuthorsPadding">
-            <span className="we">WE:</span>
-            <ul className="text-left">
-              {parentArray[0].firstBook.aboutUs.map((item) => (
-                <li dangerouslySetInnerHTML={{ __html: item }}></li>
-              ))}
-            </ul>
           </div>
         </div>
       </div>

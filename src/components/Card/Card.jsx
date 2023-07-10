@@ -7,8 +7,8 @@ const Card = ({ item }) => {
   return (
     <>
       {item.urlThumbnail ? (
-        <div className=" col-lg-3 col-md-6 col-sm-6 text-white cardWidth mb-4 pl-1 mt-3">
-          <div className="data p-3  mb-2 reviewColor h-100 rounded ">
+        <div className=" col-lg-3 col-md-6 col-sm-6 text-white cardWidth  mb-4 pl-1 cardSMarginTop ms-2">
+          <div className="data p-3  mb-2 reviewColor h-100 rounded ms-5 ">
             <div className="img mt-2 mb-2 text-center">
               <img
                 src={item.urlThumbnail}
@@ -30,11 +30,11 @@ const Card = ({ item }) => {
         </div>
       ) : (
         <div
-          className="d-flex mt-5  MuiGrid-container MuiGrid-justify-content-xs-space-around "
+          className="row mt-5  MuiGrid-container MuiGrid-justify-content-xs-space-around "
           align="flex-start"
         >
           <div
-            className="  col-xs-12 col-sm-4 p-0 mb-5"
+            className="  col-lg-4 col-md-4 col-sm-12 p-0 mb-5"
             style={{ textAlign: "left" }}
           >
             {item.firstDiv.map((item) => (

@@ -1,13 +1,14 @@
 import React from "react";
 
-const BookFeatures = ({ parentArray }) => {
+const BookFeatures = ({ item }) => {
   return (
     <div>
-      <div className="row mt-5 text-align-left  ">
-        {parentArray[0].firstBook.BookIntro.features.map((item, index) => (
-          <div key={index} className="text-white col-lg-6  featurePading mb-3 ">
+      <h1 className="text-center mt-5">{item.whyBookHeading}</h1>
+      <div className="row featuresMarginTop text-align-left BookFeatureColor  ">
+        {item.featuresArray.map((item, index) => (
+          <div key={index} className="col-lg-6  featurePading mb-3  ">
             <p>{item.paragraphHeading}</p>
-            <p className="featureDiv">
+            <p className="featureDiv featurelink">
               <p dangerouslySetInnerHTML={{ __html: item.paragraph }}></p>
             </p>
           </div>

@@ -4,6 +4,7 @@ import BookFeatures from "../../components/BookFeatures/BookFeatures";
 import TableOfContents from "../../components/TableOfContents/TableOfContents";
 import Chapters from "../../components/Chapters/Chapters";
 import Authors from "../../components/Authors/Authors";
+import AboutUs from "../../components/AboutUs/AboutUs";
 import {
   AiFillCaretDown,
   AiOutlineArrowRight,
@@ -13,36 +14,40 @@ import { parentArray } from "../../config/data";
 import Card from "../../components/Card/Card";
 
 const Builderbook = () => {
-  return (
-    <div className="page1">
-      <BookIntroduction parentArray={parentArray} />
-      <div className="row mx-0 mt-4 ">
-        {parentArray[0].firstBook.Reviews.BookPage.map((item) => (
-          <Card item={item} />
-        ))}
-      </div>
-      <div className="buttons d-flex justify-content-center align-items-center mt-1 ">
-        <button className="m-3 text-white btn shadow-none ml-3 navbtn">
-          <span>See all Reviews</span>
-        </button>
-        <button className="m-3 text-white btn shadow-none ml-3 navbtn">
-          {" "}
-          <span>About Us</span>
-        </button>
-      </div>
-      <h1 className="text-center text-white mt-4">
-        {" "}
-        {parentArray[0].firstBook.BookIntro.whyBookHeading}
-      </h1>
+  if (parentArray && parentArray.length > 0) {
+    return (
+      <div className="page1">
+        <BookIntroduction item={parentArray[0].books[0]} />
+        <div className="row mx-0">
+          {parentArray.length !== 0 &&
+            parentArray[0].books[0].Reviews.BookPage.map((item) => (
+              <Card item={item} key={item.id} />
+            ))}
+        </div>
+        <div className="buttons d-flex justify-content-center align-items-center introBtnsTopMargin ">
+          <button className="m-2 text-white btn shadow-none ml-3 navbtn">
+            <span>See all Reviews</span>
+          </button>
+          <button className="m-2 text-white btn shadow-none ml-3 navbtn">
+            <span>About Us</span>
+          </button>
+        </div>
+        <h1 className="text-center text-white mt-4">
+          {parentArray[0]?.firstBook?.BookIntro?.whyBookHeading}
+        </h1>
 
-      <div>
-        <BookFeatures parentArray={parentArray} />
-        <TableOfContents parentArray={parentArray} />
-        <Chapters parentArray={parentArray} />
-        <Authors parentArray={parentArray} />
+        <div>
+          <BookFeatures item={parentArray[0]?.books[0]?.BookIntro?.features} />
+          <TableOfContents parentArray={parentArray} />
+          <Chapters item={parentArray[0].books[0].chapters} />
+          <Authors item={parentArray[0].books[0].Authors} />
+          <AboutUs item={parentArray[0].books[0].aboutUs} />
+        </div>
       </div>
-    </div>
-  );
+    );
+  } else {
+    return null;
+  }
 };
 
 export default Builderbook;

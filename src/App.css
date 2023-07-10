@@ -71,7 +71,7 @@ button {
   background-color: rgba(201, 209, 217, 0.08);
   color: #c9d1d9;
   border: 1px solid rgba(255, 255, 255, 0.23);
-  padding: 10px 15px;
+  padding: 6px 15px;
 }
 .navbtn {
   padding: 5px 15px;
@@ -101,7 +101,7 @@ button {
   font-size: 44px;
 }
 .cardWidth {
-  padding: 10 8%;
+  padding: 10 12% !important;
 }
 @media (max-width: 828px) {
   ul,
@@ -139,7 +139,9 @@ button {
   word-spacing: 0.01px !important;
 }
 .featurePading {
-  padding: 10px 45px !important;
+  padding: 10px 58px !important;
+  font-size: 13px !important;
+  line-height: 20px !important;
 }
 .AuthorsPadding {
   padding: 0 10%;
@@ -148,9 +150,74 @@ button {
   color: #0d1117 !important;
   border: 0px !important;
 
-  padding: 3px 6px;
+  padding: 4.5px 8px !important;
   border-radius: 4px;
 }
+.IntroBtnText2 {
+  color: #0d1117 !important;
+  border: 0px !important;
+
+  padding: 4.5px 8px !important;
+  border-radius: 4px;
+}
+.topDivofIntroButtons .IntroBtnText2::before {
+  left: -5px !important;
+  margin-top: -6px !important;
+  border-width: 6px 6px 6px 0 !important;
+}
+.IntroBtnText2::before {
+  top: 50% !important;
+
+  border-right-color: #fafafa;
+}
+.IntroBtnText:hover {
+  color: rgb(37, 37, 105);
+}
+
 .chaptersMarginleft {
   padding-left: 10px !important;
+}
+.cardSMarginTop {
+  margin-top: 20px;
+}
+.footerTerms,
+.footerTerms:hover {
+  color: #58a6ff !important;
+  text-decoration: none !important;
+  font-size: 13px;
+}
+.copyRight {
+  color: #c9d1d9 !important;
+  font-size: 13px;
+}
+.BookFeatureColor {
+  color: #c9d1d9 !important;
+}
+.marginleftChapterName {
+  margin-left: 0px !important;
+}
+.chapterListMargin {
+  padding-left: 40px;
+}
+.featuresMarginTop {
+  margin-top: 35px;
+}
+.chapterlistBottomMargin {
+  margin-bottom: 2px;
+}
+.athorsTopMargin {
+  margin-top: 33px;
+}
+.abouUsLink a,
+.abouUsLink a:hover,
+.featurelink a,
+.featurelink a:hover {
+  color: #58a6ff;
+  text-decoration: none;
+}
+.spanHover:hover {
+  color: rgb(66, 66, 143);
+}
+.authorsMarginRight {
+  margin-right: 30px !important;
 }
