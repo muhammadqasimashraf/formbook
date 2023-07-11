@@ -12,7 +12,7 @@ const Card = ({ item, margin }) => {
         <img
           src={item.urlThumbnail}
           alt=""
-          className="w-75px rounded-circle text-center"
+          className="w-75px rounded-circle text-center object-fit-cover"
           width={80}
         />
       </div>
@@ -24,12 +24,12 @@ const Card = ({ item, margin }) => {
       </div>
 
       {item.country ? (
-        <div className="heading  mb-4  text-center ">
+        <div className="heading  mb-4 mt-0  text-center ">
           <p className="countryColor mt-0"> {item.country}</p>
         </div>
       ) : null}
 
-      <div className="comment mt-3  featureDiv   mb-0">
+      <div className="comment mt-3  featureDiv text-left   mb-0">
         {" "}
         <p>"{item.review}"</p>{" "}
       </div>

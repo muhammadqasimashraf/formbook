@@ -232,16 +232,19 @@ button {
 }
 .reviewHeading {
   margin-top: 74px;
-  padding: 0 7%;
+
+  text-align: center !important;
 }
 .reviewsHeading {
   line-height: 52px;
 }
 .ReviewPageParagraph {
-  width: 1133px !important;
   height: 40px !important;
   padding: 0 !important;
-  margin-top: 30px;
+  margin-top: 34px;
+  text-align: center !important;
+
+  font-size: 12.8px !important;
 }
 .countryColor {
   color: #c9d1d9 !important;
@@ -276,6 +279,7 @@ button {
 .chapterFont {
   font-size: 15px !important;
   line-height: 23px;
+  font-family: IBM Plex Mono, monospace;
 }
 
 .aboutUsMargin {
@@ -289,4 +293,9 @@ button {
 }
 .reviewsMarginTop {
   margin-top: 30px;
+}
+.object-fit-cover {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
 }

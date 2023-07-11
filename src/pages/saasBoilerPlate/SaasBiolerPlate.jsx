@@ -19,7 +19,7 @@ const SaasBiolerPlate = () => {
     return (
       <div className="page1">
         <BookIntroduction item={parentArray[0].books[1]} />
-        <div className="row mx-0 cardspadding ">
+        <div className="row mx-0  ">
           {parentArray.length !== 0 &&
             parentArray[0].books[1].Reviews.BookPage.map((item) => (
               <div className="col-lg-3 col-md-6 col-sm-6 text-white cardWidth  mb-4 pl-1 cardSMarginTop ms-2">
