@@ -25,10 +25,10 @@ const Reviews = () => {
           ).
         </p>
       </div>
-      <div className="row align-items-center  my-0 cardspadding reviewsMarginTop mt-5">
+      <div className="row align-items-center   cardspadding">
         {parentArray[0].ReviewPage.map((item) => (
-          <div className="col-md-4 p-2 col-sm-6 text-white ">
-            <div className="data p-2 px-4  mb-2 reviewColor  rounded ms-5 mt-4 ">
+          <div className="col-md-4 col-sm-6 text-white reiviewcardbetweenPadding">
+            <div className="data p-2 px-4  mb-2 reviewColor  rounded ms-5 ">
               <Card item={item} margin={"mb - 2"} />
             </div>
           </div>

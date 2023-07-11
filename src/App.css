@@ -100,7 +100,7 @@ button {
 .reviewsHeading {
   text-align: center;
   font-weight: 400;
-  line-height: 60px;
+  line-height: 50px !important;
   font-size: 44px;
 }
 .cardWidth {
@@ -257,6 +257,7 @@ button {
   padding: 0px 0px 0px 7px;
   padding-right: 0;
   font-family: Roboto, sans-serif !important;
+  margin-top: 82px !important;
 }
 .cardNameFontFamiy {
   font-family: IBM Plex Mono, monospace !important;
@@ -282,4 +283,10 @@ button {
 }
 .imgcardMarginTop {
   margin-top: 5px;
+}
+.reiviewcardbetweenPadding {
+  padding: 0px 10px !important;
+}
+.reviewsMarginTop {
+  margin-top: 30px;
 }
