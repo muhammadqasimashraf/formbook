@@ -28,7 +28,7 @@ const Chapters = ({ item }) => {
 
                   {item.topics.map((item) =>
                     item.isList ? (
-                      <div className="ml-5 chapterlistBottomMargin">
+                      <div className="chapterMarginLeft chapterlistBottomMargin">
                         <li> {item.topic}</li>
 
                         {item.subTopics.map((item) => (
@@ -38,7 +38,7 @@ const Chapters = ({ item }) => {
                         ))}
                       </div>
                     ) : (
-                      <div className="ml-4 chapterlistTopMargin">
+                      <div className="chapterMarginLeft chapterlistTopMargin">
                         <li className="chapterlistBottomMargin">
                           {item.topic}
                         </li>
@@ -56,11 +56,14 @@ const Chapters = ({ item }) => {
         >
           {item[1].secondfive.map((item) => (
             <div className="mb-4">
-              <ul className="text-white chapterBackground rounded p-4 ">
+              <ul className="text-white chapterBackground rounded p-2 ">
                 <div>
                   <a href="#" className="chapterLink">
                     {" "}
-                    <div style={{ marginLeft: "-15px" }} className="mb-4">
+                    <div
+                      style={{ marginLeft: "-15px" }}
+                      className="mb-3 marginleftChapterName"
+                    >
                       {" "}
                       {item.chapterName}
                     </div>
@@ -68,18 +71,20 @@ const Chapters = ({ item }) => {
 
                   {item.topics.map((item) =>
                     item.isList ? (
-                      <div className="ml-4 mt-1">
+                      <div className="chapterMarginLeft chapterlistBottomMargin">
                         <li> {item.topic}</li>
 
                         {item.subTopics.map((item) => (
                           <ul>
-                            <li className="mt-1">{item}</li>
+                            <li className="chapterlistBottomMargin">{item}</li>
                           </ul>
                         ))}
                       </div>
                     ) : (
-                      <div className="ml-4 mt-1">
-                        <li className="mt-1">{item.topic}</li>
+                      <div className="chapterMarginLeft chapterlistTopMargin">
+                        <li className="chapterlistBottomMargin">
+                          {item.topic}
+                        </li>
                       </div>
                     )
                   )}

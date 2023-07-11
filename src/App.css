@@ -11,11 +11,13 @@ h1 {
   font-size: 44px !important;
 }
 .subheading {
-  line-height: 1.46 !important;
+  line-height: 1.4 !important;
   word-spacing: 0% !important;
-  font-size: 12.5px !important;
+  font-size: 14px !important;
   margin-top: 3px;
-  letter-spacing: 0.01rem !important;
+  margin-bottom: 10px;
+  font-family: Plex Mono, monospace !important;
+  padding: 0px;
 }
 button {
   font-family: "IBM Plex Mono", monospace !important;
@@ -28,6 +30,10 @@ button {
 .cardPadding {
   padding: 10px 8%;
 }
+.AuthorsPadding {
+  padding: 0 16% !important;
+  margin-bottom: 12%;
+}
 .btn {
   background: none;
 }
@@ -39,9 +45,9 @@ button {
   word-spacing: 0.01rem;
   color: #c9d1d9;
   padding: 15px 5px;
-  padding-bottom: 24px !important;
+  padding-bottom: 12px !important;
   line-height: 1.43;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, sans-serif !important;
 }
 
 .about-us {
@@ -134,8 +140,8 @@ button {
   padding: 7px 14px !important;
   line-height: 21.5;
   background-color: #238636 !important;
-  font-size: 13px !important;
-  font-family: IBM Plex Mono, monospace !important;
+  font-size: 14px !important;
+  font-family: Plex Mono, monospace !important;
   word-spacing: 0.01px !important;
 }
 .featurePading {
@@ -147,18 +153,24 @@ button {
   padding: 0 10%;
 }
 .IntroBtnText {
-  color: #0d1117 !important;
+  color: #333 !important;
   border: 0px !important;
 
-  padding: 4.5px 8px !important;
+  padding: 4px 8px !important;
   border-radius: 4px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif !important;
+  font-size: 16px !important;
 }
 .IntroBtnText2 {
-  color: #0d1117 !important;
+  font-size: 16px !important;
+  color: #333 !important;
   border: 0px !important;
 
-  padding: 4.5px 8px !important;
+  padding: 5px 8px !important;
   border-radius: 4px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif !important;
 }
 .topDivofIntroButtons .IntroBtnText2::before {
   left: -5px !important;
@@ -220,4 +232,36 @@ button {
 }
 .authorsMarginRight {
   margin-right: 30px !important;
+}
+.reviewHeading {
+  margin-top: 74px;
+  padding: 0 7%;
+}
+.reviewsHeading {
+  line-height: 52px;
+}
+.ReviewPageParagraph {
+  width: 1133px !important;
+  height: 40px !important;
+  padding: 0 !important;
+  margin-top: 30px;
+}
+.countryColor {
+  color: #c9d1d9 !important;
+  margin-top: 0px !important;
+}
+.chapterMarginLeft {
+  margin-left: 40px;
+}
+.introBtnMargin {
+  margin-top: 18px;
+}
+.cardspadding {
+  padding: 0px 0px 0px 7px;
+  padding-right: 0;
+  font-family: Roboto, sans-serif !important;
+}
+.featureDiv {
+  line-height: 20.5px;
+  font-family: IBM Plex Mono, monospace;
 }

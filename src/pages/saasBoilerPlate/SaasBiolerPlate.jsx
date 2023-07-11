@@ -19,10 +19,14 @@ const SaasBiolerPlate = () => {
     return (
       <div className="page1">
         <BookIntroduction item={parentArray[0].books[1]} />
-        <div className="row mx-0">
+        <div className="row mx-0 cardspadding ">
           {parentArray.length !== 0 &&
             parentArray[0].books[1].Reviews.BookPage.map((item) => (
-              <Card item={item} key={item.id} />
+              <div className="col-lg-3 col-md-6 col-sm-6 text-white cardWidth  mb-4 pl-1 cardSMarginTop ms-2">
+                <div className="data p-3  mb-2 reviewColor h-100 rounded ms-5">
+                  <Card item={item} key={item.id} />
+                </div>
+              </div>
             ))}
         </div>
         <div className="buttons d-flex justify-content-center align-items-center ">
@@ -39,7 +43,7 @@ const SaasBiolerPlate = () => {
 
         <div>
           <BookFeatures item={parentArray[0]?.books[1]?.BookIntro?.features} />
-          <TableOfContents parentArray={parentArray} />
+          <TableOfContents item={parentArray[0].books[1].BookIntro} />
           <Chapters item={parentArray[0].books[1].chapters} />
           <Authors item={parentArray[0].books[1].Authors} />
           <AboutUs item={parentArray[0].books[1].aboutUs} />

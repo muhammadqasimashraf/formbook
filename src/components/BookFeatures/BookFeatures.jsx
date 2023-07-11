@@ -7,7 +7,7 @@ const BookFeatures = ({ item }) => {
       <div className="row featuresMarginTop text-align-left BookFeatureColor  ">
         {item.featuresArray.map((item, index) => (
           <div key={index} className="col-lg-6  featurePading mb-3  ">
-            <p>{item.paragraphHeading}</p>
+            <p className="font-weight-bold">{item.paragraphHeading}</p>
             <p className="featureDiv featurelink">
               <p dangerouslySetInnerHTML={{ __html: item.paragraph }}></p>
             </p>

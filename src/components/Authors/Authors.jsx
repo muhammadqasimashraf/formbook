@@ -3,7 +3,7 @@ import React from "react";
 const Authors = ({ item }) => {
   return (
     <div>
-      <div className="text-center  athorsTopMargin align-items-center d-flex flex-column justify-content-center align-items-center ">
+      <div className="text-center  athorsTopMargin align-items-center d-flex flex-column justify-content-center align-items-center authorsMargin ">
         <div>
           {" "}
           <h1> {item.headingOfAuthors}</h1>

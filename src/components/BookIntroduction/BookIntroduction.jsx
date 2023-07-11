@@ -38,7 +38,7 @@ const BookIntroduction = ({ item }) => {
         </div>
         <button
           type="button"
-          className="btn btn-sm btn-text mt-4 font-weight-normal text-white shadow-none previewBtn mb-4"
+          className="btn btn-sm btn-text I  introBtnMargin font-weight-normal text-white shadow-none previewBtn mb-4"
         >
           {item.BookIntro.previewbtnText}
         </button>
