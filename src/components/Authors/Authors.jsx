@@ -10,7 +10,7 @@ const Authors = ({ item }) => {
           <p>{item.subHeadingofAuthors}</p>
         </div>
 
-        <div className="d-flex flex-column justify-content-around align-items-center  ">
+        <div className="d-flex flex-column justify-content-around align-items-center AuthorsPadding  ">
           <div className="d-flex justify-content-around align-items-center authorsWidth ">
             {item.authorsData.map((item) => (
               <div className="d-flex authorsMarginRight ">

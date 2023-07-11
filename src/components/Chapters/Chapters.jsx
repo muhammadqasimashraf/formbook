@@ -13,7 +13,7 @@ const Chapters = ({ item }) => {
         >
           {item[0].firstfive.map((item) => (
             <div className="mb-4">
-              <ul className="text-white chapterBackground rounded p-2 ">
+              <ul className="text-white chapterBackground rounded p-2 chapterFont ">
                 <div>
                   <a href="#" className="chapterLink">
                     {" "}
@@ -56,7 +56,7 @@ const Chapters = ({ item }) => {
         >
           {item[1].secondfive.map((item) => (
             <div className="mb-4">
-              <ul className="text-white chapterBackground rounded p-2 ">
+              <ul className="text-white chapterBackground rounded p-2 chapterFont ">
                 <div>
                   <a href="#" className="chapterLink">
                     {" "}
@@ -71,7 +71,7 @@ const Chapters = ({ item }) => {
 
                   {item.topics.map((item) =>
                     item.isList ? (
-                      <div className="chapterMarginLeft chapterlistBottomMargin">
+                      <div className="chapterMarginLeft chapterlistBottomMargin chapterFont">
                         <li> {item.topic}</li>
 
                         {item.subTopics.map((item) => (
@@ -81,7 +81,7 @@ const Chapters = ({ item }) => {
                         ))}
                       </div>
                     ) : (
-                      <div className="chapterMarginLeft chapterlistTopMargin">
+                      <div className="chapterMarginLeft chapterlistTopMargin chapterFont">
                         <li className="chapterlistBottomMargin">
                           {item.topic}
                         </li>

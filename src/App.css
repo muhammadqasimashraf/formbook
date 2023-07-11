@@ -30,10 +30,7 @@ button {
 .cardPadding {
   padding: 10px 8%;
 }
-.AuthorsPadding {
-  padding: 0 16% !important;
-  margin-bottom: 12%;
-}
+
 .btn {
   background: none;
 }
@@ -218,7 +215,7 @@ button {
   margin-bottom: 2px;
 }
 .athorsTopMargin {
-  margin-top: 33px;
+  margin-top: 25px;
 }
 .abouUsLink a,
 .abouUsLink a:hover,
@@ -261,7 +258,28 @@ button {
   padding-right: 0;
   font-family: Roboto, sans-serif !important;
 }
+.cardNameFontFamiy {
+  font-family: IBM Plex Mono, monospace !important;
+  font-size: 13px !important;
+}
 .featureDiv {
   line-height: 20.5px;
   font-family: IBM Plex Mono, monospace;
+}
+
+.AuthorsPadding {
+  padding: 0 16% !important;
+
+  font-size: 14px !important;
+}
+.chapterFont {
+  font-size: 15px !important;
+  line-height: 23px;
+}
+
+.aboutUsMargin {
+  margin-bottom: 15%;
+}
+.imgcardMarginTop {
+  margin-top: 5px;
 }

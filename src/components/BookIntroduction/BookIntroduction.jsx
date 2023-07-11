@@ -19,7 +19,7 @@ const BookIntroduction = ({ item }) => {
               type="button"
               className=" btn-light mr-1 font-weight-bold btnPadding shadow-none    IntroBtnText "
             >
-              <AiFillGithub style={{ width: "30px", height: "22px" }} />
+              <AiFillGithub style={{ width: "30px", height: "20px" }} />
               <span className="fw-bolder">Star</span>
             </button>
 

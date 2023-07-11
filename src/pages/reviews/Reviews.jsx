@@ -7,7 +7,7 @@ const Reviews = () => {
   return (
     <div className="reviewsPage">
       <div className="text-center  reviewHeading">
-        <h1 className="reviewsHeading text-center">
+        <h1 className=" text-center">
           {" "}
           Here's what people say about our books:
         </h1>
@@ -25,10 +25,10 @@ const Reviews = () => {
           ).
         </p>
       </div>
-      <div className="row align-items-center  my-0 cardspadding reviewsMarginTop">
+      <div className="row align-items-center  my-0 cardspadding reviewsMarginTop mt-5">
         {parentArray[0].ReviewPage.map((item) => (
           <div className="col-md-4 p-2 col-sm-6 text-white ">
-            <div className="data p-2 px-4  mb-2 reviewColor  rounded ms-5 ">
+            <div className="data p-2 px-4  mb-2 reviewColor  rounded ms-5 mt-4 ">
               <Card item={item} margin={"mb - 2"} />
             </div>
           </div>

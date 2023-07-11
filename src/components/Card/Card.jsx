@@ -8,7 +8,7 @@ const Card = ({ item, margin }) => {
 
   return (
     <div>
-      <div className="img mt-2 mb-2 text-center w-100">
+      <div className="img imgcardMarginTop mb-2 text-center w-100">
         <img
           src={item.urlThumbnail}
           alt=""
@@ -18,7 +18,7 @@ const Card = ({ item, margin }) => {
       </div>
 
       <div className="heading mt-3 mb-2  text-center">
-        <a href={url} className="authorUrl">
+        <a href={url} className="authorUrl cardNameFontFamiy">
           {item.name}
         </a>
       </div>
