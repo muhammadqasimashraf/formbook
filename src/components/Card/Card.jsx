@@ -1,11 +1,12 @@
 import React from "react";
+import { clsx } from "clsx";
 
 const Card = ({ item, margin }) => {
   console.log(margin, "margin is");
   console.log(item, "inside card component");
   let url = "#";
   console.log("item country", item.country);
-
+  const headingClass = `heading mt-3 text-center ${margin ? margin : "mb-3"} `;
   return (
     <div>
       <div className="img imgcardMarginTop mb-2 text-center w-100">
@@ -17,7 +18,7 @@ const Card = ({ item, margin }) => {
         />
       </div>
 
-      <div className="heading mt-3 mb-2  text-center">
+      <div className={headingClass}>
         <a href={url} className="authorUrl cardNameFontFamiy">
           {item.name}
         </a>

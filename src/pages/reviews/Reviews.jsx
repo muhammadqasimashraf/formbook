@@ -29,7 +29,7 @@ const Reviews = () => {
         {parentArray[0].ReviewPage.map((item) => (
           <div className="col-md-4 col-sm-6 text-white reiviewcardbetweenPadding">
             <div className="data p-2 px-4  mb-3 reviewColor  rounded ms-5 ">
-              <Card item={item} margin={"mb - 2"} />
+              <Card item={item} margin={"mb-2"} />
             </div>
           </div>
         ))}
